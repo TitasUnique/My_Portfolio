@@ -1,0 +1,147 @@
+.n-wrapper{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 40px;
+    /* color: white; */
+    background: linear-gradient(to right, rgb(230,230,230), rgb(190,190,190));
+}
+
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.n-name{
+    
+    font-size: 40px;
+    font-family: Brush Script MT;
+    background: linear-gradient(to right, #d81313,#d61aad,#b135d6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.n-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.n-right-list-ul{
+    display: flex;
+    gap: 6rem;
+    margin-right: 6rem;
+    list-style: none;
+}
+
+.Edu-list>a, .Exp-list>a, .Proj-list>a, .Work-list>a, .Other-list>a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+.Edu-list>a:hover, .Exp-list>a:hover, .Proj-list>a:hover, .Work-list>a:hover, .Other-list>a:hover{
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.sub-menu1, .sub-menu2, .sub-menu3, .sub-menu4, .sub-menu5{
+    /* background-color: black; */
+    position: absolute;
+}
+
+.sub-menu1>ul, .sub-menu2>ul, .sub-menu3>ul, .sub-menu4>ul, .sub-menu5>ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+    /* margin: 5px; */
+    /* background-color: black; */
+    /* position: absolute; */
+}
+
+.sub-menu1>ul>li, .sub-menu2>ul>li, .sub-menu3>ul>li, .sub-menu4>ul>li, .sub-menu5>ul>li{
+    padding-top: 10px;
+}
+
+.sub-menu1>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    left: -11px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.sub-menu2>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    left: -32px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.sub-menu3>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    left: -36px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.sub-menu4>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    left: -27px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.sub-menu5>ul>li>a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    left: 4px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.sub-menu1>ul>li>a:hover, .sub-menu2>ul>li>a:hover, .sub-menu3>ul>li>a:hover, .sub-menu4>ul>li>a:hover, .sub-menu5>ul>li>a:hover{
+    color: rgb(255, 94, 0);
+    background: linear-gradient(to right, rgb(255, 197, 143), rgb(255, 255, 255));
+}
+
+.Edu-list:hover .sub-menu1>ul, .Exp-list:hover .sub-menu2-ul, .Proj-list:hover .sub-menu3-ul, .Work-list:hover .sub-menu4-ul, .Other-list:hover .sub-menu5-ul{
+    display: block;
+}
+
+.button{
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
+    box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
+}
+
+.button:hover{
+    cursor: pointer;
+    color: black;
+}

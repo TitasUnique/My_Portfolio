@@ -1,0 +1,48 @@
+.Cardsection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 38rem;
+    overflow: hidden;
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.left-btn, .right-btn{
+    width: 60px;
+    position: absolute;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.left-btn{
+    left: 0;
+}
+
+.right-btn{
+    right: 0;
+}
+
+.left-btn>h1, .right-btn>h1{
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.436);
+    border-radius: 50px;
+    color: white;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
