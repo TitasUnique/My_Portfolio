@@ -1,70 +1,41 @@
-/* Add this CSS in a separate file, e.g., DemoTesting.css */
-
-.avatar {
-  width: 24px;
-  height: 24px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
+nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-right: 8px;
+  background-color: #333;
+  padding: 10px;
 }
 
-.chip-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  position: relative;
-}
-
-.chip {
-  display: flex;
-  align-items: center;
-  background-color: #e0e0e0;
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-right: 8px;
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
   cursor: pointer;
+  font-size: 16px;
 }
 
-.close {
-  margin-left: 4px;
-  cursor: pointer;
-}
-
-input {
-  padding: 8px;
-  font-size: 14px;
-  border-radius: 4px;
-  width: calc(100% - 16px);
-  margin-top: 8px;
-}
-
-.suggested-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.dropdown {
   position: absolute;
-  z-index: 1;
-  background-color: #fff;
+  top: 50px;
+  left: 0;
   width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.suggested-list li {
-  padding: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  display: flex;
-  align-items: center;
+.dropdown.show {
+  height: 100px;
 }
 
-.suggested-list li:hover {
-  background-color: #f0f0f0;
+.dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
 }

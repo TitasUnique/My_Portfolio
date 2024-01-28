@@ -5,7 +5,8 @@
     padding-left: 70px;
     padding-right: 40px;
     /* color: white; */
-    background: linear-gradient(to right, rgb(230,230,230), rgb(190,190,190));
+    /* background: linear-gradient(to right, rgb(230,230,230), rgb(190,190,190)); */
+    /* background: rgb(190,190,190); */
 }
 
 .n-left{
@@ -40,6 +41,10 @@
     list-style: none;
 }
 
+/* .Edu-list{
+    width: 85px;
+} */
+
 .Edu-list>a, .Exp-list>a, .Proj-list>a, .Work-list>a, .Other-list>a{
     text-decoration: none;
     color: black;
@@ -62,6 +67,13 @@
     display: none;
     padding: 0;
     list-style: none;
+    position: relative;
+    
+    /* background: rgb(190,190,190); */
+    /* height: 107px;
+    left: -16px;
+    width: 109px;
+    border-radius: 10px; */
     /* margin: 5px; */
     /* background-color: black; */
     /* position: absolute; */
@@ -123,7 +135,7 @@
 
 .sub-menu1>ul>li>a:hover, .sub-menu2>ul>li>a:hover, .sub-menu3>ul>li>a:hover, .sub-menu4>ul>li>a:hover, .sub-menu5>ul>li>a:hover{
     color: rgb(255, 94, 0);
-    background: linear-gradient(to right, rgb(255, 197, 143), rgb(255, 255, 255));
+    /* background: linear-gradient(to right, rgb(255, 197, 143), rgb(255, 255, 255)); */
 }
 
 .Edu-list:hover .sub-menu1>ul, .Exp-list:hover .sub-menu2-ul, .Proj-list:hover .sub-menu3-ul, .Work-list:hover .sub-menu4-ul, .Other-list:hover .sub-menu5-ul{
