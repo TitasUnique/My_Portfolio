@@ -1,12 +1,12 @@
 .n-wrapper{
     height: 12vh;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-left: 70px;
     padding-right: 40px;
     /* color: white; */
     /* background: linear-gradient(to right, rgb(230,230,230), rgb(190,190,190)); */
-    /* background: rgb(190,190,190); */
+    background: rgb(190,190,190);
 }
 
 .n-left{
@@ -41,10 +41,6 @@
     list-style: none;
 }
 
-/* .Edu-list{
-    width: 85px;
-} */
-
 .Edu-list>a, .Exp-list>a, .Proj-list>a, .Work-list>a, .Other-list>a{
     text-decoration: none;
     color: black;
@@ -75,7 +71,6 @@
     width: 109px;
     border-radius: 10px; */
     /* margin: 5px; */
-    /* background-color: black; */
     /* position: absolute; */
 }
 

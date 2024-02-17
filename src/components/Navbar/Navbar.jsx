@@ -8,9 +8,7 @@ const navbar = () => {
       </div>
 
       <div className="n-right">
-        <div className="n-list">
           <ul className='n-right-list-ul'>
-
             <li className="Edu-list">
               <a href="https://react.dev/">Education <i className="fa-solid fa-caret-down" /></a>
               <div className="sub-menu1">
@@ -61,9 +59,7 @@ const navbar = () => {
                 </ul>
               </div>
             </li>
-            
           </ul>
-        </div>
         <button className='button'>Contact</button>
       </div>
     </div>
