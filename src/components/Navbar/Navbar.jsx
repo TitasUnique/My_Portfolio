@@ -61,7 +61,7 @@ const Navbar = () => {
 
           <li className='Other-list'>
             <a href="https://react.dev/">Others
-            <i className="fa-solid fa-arrow-right"></i></a>
+              <i className="fa-solid fa-arrow-right"></i></a>
             <div className="sub-menu5">
               <ul>
                 <li>

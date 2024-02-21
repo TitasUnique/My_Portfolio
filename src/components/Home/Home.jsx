@@ -14,18 +14,16 @@ const Home = () => {
         <div className="t-writter">
           <ReactTyped strings={["Frontend Developement with Entry Level of Experience in Web Designing", "Java Developement with Intermediate Level of Experience in Coding"]} typeSpeed={40} backSpeed={20} backDelay={600} loop />
         </div>
-        <a href={Resume}>
-          <button className="h-button">Download CV</button>
-        </a>
+        <a className="h-button" href={Resume}>Download CV</a>
       </div>
       <div className="h-right" data-aos="fade-up">
-          <img src={Image1} alt="" />
-          <img src={Image2} alt="" />
-          <img src={Image3} alt="" />
-          <div className="blur1"></div>
-          <div className="blur2"></div>
-          <div className="blur3"></div>
-        </div>
+        <img src={Image1} alt="" />
+        <img src={Image2} alt="" />
+        <img src={Image3} alt="" />
+        <div className="blur1"></div>
+        <div className="blur2"></div>
+        <div className="blur3"></div>
+      </div>
     </div>
   );
 };
