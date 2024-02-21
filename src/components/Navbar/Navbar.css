@@ -6,7 +6,7 @@
     padding-right: 40px;
     /* color: white; */
     /* background: linear-gradient(to right, rgb(230,230,230), rgb(190,190,190)); */
-    background: rgb(190,190,190);
+    /* background: rgb(190,190,190); */
 }
 
 .n-left{
@@ -52,6 +52,14 @@
 .Edu-list>a:hover, .Exp-list>a:hover, .Proj-list>a:hover, .Work-list>a:hover, .Other-list>a:hover{
     color: rgb(255, 123, 0);
     cursor: pointer;
+}
+
+.n-right-list-ul>li:hover a>i {
+    transform: rotate(90deg);
+}
+
+.n-right-list-ul > li > a > i {
+    transition: transform 0.5s;
 }
 
 .sub-menu1, .sub-menu2, .sub-menu3, .sub-menu4, .sub-menu5{
