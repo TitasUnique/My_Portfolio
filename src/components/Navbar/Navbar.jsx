@@ -27,7 +27,7 @@ const Navbar = () => {
               <i className="fa-solid fa-arrow-right"></i>
             </a>
             <div className="sub-menu2">
-              <ul className='sub-menu2-ul'>
+              <ul>
                 <li><a href="https://react.dev/">LearnElectronics India</a></li>
                 <li><a href="https://react.dev/">Wipro</a></li>
               </ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
               <i className="fa-solid fa-arrow-right"></i>
             </a>
             <div className="sub-menu3">
-              <ul className='sub-menu3-ul'>
+              <ul>
                 <li><a href="https://react.dev/">Academic Projects</a></li>
                 <li><a href="https://react.dev/">Work Projects</a></li>
                 <li><a href="https://react.dev/">Personal Projects</a></li>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <i className="fa-solid fa-arrow-right"></i>
             </a>
             <div className="sub-menu4">
-              <ul className='sub-menu4-ul'>
+              <ul>
                 <li><a href="https://react.dev/">Web Developement</a></li>
                 <li><a href="https://react.dev/">Coding Analysis</a></li>
               </ul>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <a href="https://react.dev/">Others
             <i className="fa-solid fa-arrow-right"></i></a>
             <div className="sub-menu5">
-              <ul className='sub-menu5-ul'>
+              <ul>
                 <li>
                   <a href="https://react.dev/">Hobby</a>
                 </li>
