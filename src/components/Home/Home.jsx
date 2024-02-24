@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <a className="h-button" href={Resume}>Download CV</a>
       </div>
-      <div className="h-right" data-aos="fade-up">
+      <div className="h-right">
         <img src={Image1} alt="" />
         <img src={Image2} alt="" />
         <img src={Image3} alt="" />

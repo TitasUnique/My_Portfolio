@@ -6,7 +6,7 @@ const Cardshown = (props) => {
     ...props.width01,
   };
   return (
-    <div className='cards-shown'>
+    <div className='cards-shown' data-aos="zoom-in">
       <img src={props.img} style={combinedStyle} alt="images" />
       <span>{props.name}</span>
       <span className='span-hover'>{props.projname}</span>

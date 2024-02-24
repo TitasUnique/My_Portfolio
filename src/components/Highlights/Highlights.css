@@ -1,3 +1,62 @@
-.highlight{
-    margin-top: 10rem;
+.highlight {
+  margin-top: 10rem;
+}
+
+.cards-img {
+  display: flex;
+  align-items: center;
+  margin: 0%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  height: 205px;
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: red; */
+  background-color: rgb(255, 255, 255);
+}
+
+.box {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex: 1;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.pentagon-card {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to right, rgb(128, 136, 131), rgb(184, 195, 197));
+}
+
+.circle-card {
+  display: flex;
+  background: linear-gradient(to right,  rgb(135 9 93), rgb(229 49 102));
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(10, 100, 145), rgb(17, 45, 60));
+  height: 66px;
+  width: 66px;
+  rotate: 45deg;
+}
+
+.square-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,  rgb(159 159 3), rgb(0 253 255 / 44%));
+  height: 70px;
+  width: 70px;
 }
