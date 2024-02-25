@@ -70,6 +70,8 @@
 
 .Edu-list:hover .sub-menu1>ul, .Exp-list:hover .sub-menu2>ul, .Proj-list:hover .sub-menu3>ul, .Work-list:hover .sub-menu4>ul, .Other-list:hover .sub-menu5>ul{
     display: block;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
 

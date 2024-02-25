@@ -74,7 +74,7 @@ const Highlights = () => {
             <img src={html} style={{ "padding-top": "9px", transform: "scale(0.7)", width: "64px", height: "74px", rotate: "-45deg" }} alt="#" />
           </div>
           <div className="diamond-card diamond-card-back">
-            <h1 className="text-html">html</h1>
+            <h1 className="text-html">HTML</h1>
           </div>
         </div>
 
