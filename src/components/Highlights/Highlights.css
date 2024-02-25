@@ -2,7 +2,7 @@
   margin-top: 10rem;
 }
 
-.cards-img {
+.cards-section {
   display: flex;
   align-items: center;
   margin: 0%;
@@ -10,53 +10,189 @@
   padding-right: 10px;
   width: auto;
   height: 205px;
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: red; */
   background-color: rgb(255, 255, 255);
 }
 
 .box {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  perspective: 1000px;
+  position: relative;
   display: flex;
-  flex: 1;
-  gap: 10rem;
+  margin: 0 43px;
   align-items: center;
   justify-content: center;
+  height: 80px;
+  width: 80px;
 }
 
 .pentagon-card {
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  width: 80px;
+  position: absolute;
   height: 80px;
+  width: 80px;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   background: linear-gradient(to right, rgb(128, 136, 131), rgb(184, 195, 197));
 }
 
-.circle-card {
+.pentagon-card-back {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.text-java, .text-oops {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e61b00, 0 0 40px #e61b00, 0 0 50px #e61b00, 0 0 60px #e61b00, 0 0 70px #e61b00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f1dbd, 0 0 40px #3f1dbd, 0 0 50px #3f1dbd, 0 0 60px #3f1dbd, 0 0 70px #3f1dbd, 0 0 80px #3f1dbd;
+  }
+}
+
+.circle-card {
+  position: absolute;
   background: linear-gradient(to right,  rgb(135 9 93), rgb(229 49 102));
   height: 80px;
   width: 80px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.diamond-card {
   display: flex;
   align-items: center;
   justify-content: center;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  border-radius: 50%;
+}
+
+.circle-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.text-css, .text-Bootstrap {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow1 1s ease-in-out infinite alternate;
+  -moz-animation: glow1 1s ease-in-out infinite alternate;
+  animation: glow1 1s ease-in-out infinite alternate;
+}
+
+.text-Bootstrap {
+  font-size: 16px;
+}
+
+@keyframes glow1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e61b00, 0 0 40px #e61b00, 0 0 50px #e61b00, 0 0 60px #e61b00, 0 0 70px #e61b00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f1dbd, 0 0 40px #3f1dbd, 0 0 50px #3f1dbd, 0 0 60px #3f1dbd, 0 0 70px #3f1dbd, 0 0 80px #3f1dbd;
+  }
+}
+
+.diamond-card {
+  position: absolute;
   background: linear-gradient(to right, rgb(10, 100, 145), rgb(17, 45, 60));
   height: 66px;
   width: 66px;
   rotate: 45deg;
-}
-
-.square-card {
   display: flex;
   align-items: center;
   justify-content: center;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.diamond-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.text-javascript, .text-html {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  rotate: -45deg;
+  -webkit-animation: glow2 1s ease-in-out infinite alternate;
+  -moz-animation: glow2 1s ease-in-out infinite alternate;
+  animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.text-javascript{
+  font-size: 16px;
+}
+
+@keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e61b00, 0 0 40px #e61b00, 0 0 50px #e61b00, 0 0 60px #e61b00, 0 0 70px #e61b00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f1dbd, 0 0 40px #3f1dbd, 0 0 50px #3f1dbd, 0 0 60px #3f1dbd, 0 0 70px #3f1dbd, 0 0 80px #3f1dbd;
+  }
+}
+
+.square-card {
+  position: absolute;
   background: linear-gradient(to right,  rgb(159 159 3), rgb(0 253 255 / 44%));
   height: 70px;
   width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.square-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.text-arduino, .text-react {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow3 1s ease-in-out infinite alternate;
+  -moz-animation: glow3 1s ease-in-out infinite alternate;
+  animation: glow3 1s ease-in-out infinite alternate;
+}
+
+.text-arduino {
+  font-size: 15px;
+}
+
+@keyframes glow3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e61b00, 0 0 40px #e61b00, 0 0 50px #e61b00, 0 0 60px #e61b00, 0 0 70px #e61b00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3f1dbd, 0 0 40px #3f1dbd, 0 0 50px #3f1dbd, 0 0 60px #3f1dbd, 0 0 70px #3f1dbd, 0 0 80px #3f1dbd;
+  }
+}
+
+.box:hover .pentagon-card-front, .box:hover .circle-card-front, .box:hover .diamond-card-front, .box:hover .square-card-front {
+  transform: rotateY(-180deg);
+}
+
+.box:hover .pentagon-card-back, .box:hover .circle-card-back, .box:hover .diamond-card-back, .box:hover .square-card-back {
+  transform: rotateY(0deg);
 }
