@@ -1,4 +1,88 @@
-.terminal-section
-{
+.terminal-section {
+    display: flex;
+    height: 50%;
+    width: 100%;
     margin-top: 10rem;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.bg-image {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.bg-image>img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line {
+    margin-top: 10px;
+    border-left: 3px solid rgb(0, 0, 0);
+    height: 330px;
+}
+
+.link-image {
+    display: flex;
+    height: 25%;
+    width: auto;
+}
+
+.link-image>a {
+    display: flex;
+    margin: 0px 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.link-image>a>img {
+    height: 40px;
+    width: 40px;
+}
+
+.about-project {
+    height: 32%;
+    width: 70%;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.form1 {
+    margin-left: 30%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
