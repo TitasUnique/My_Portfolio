@@ -86,3 +86,7 @@
     align-items: center;
     gap: 2rem;
 }
+
+textarea {
+    resize: none;
+}

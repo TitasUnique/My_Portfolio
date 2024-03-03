@@ -14,7 +14,7 @@ const Highlights = () => {
     <div className='highlight'>
       <div className='highlight-text'><h1>Highlights</h1></div>
 
-      <div className="cards-section">
+      <div className="cards-section" data-aos="zoom-in-down">
         <div className="box">
           <div className="pentagon-card pentagon-card-front">
             <img src={java} style={{ transform: "scale(0.7)", width: "80px", height: "80px" }} alt="#" />

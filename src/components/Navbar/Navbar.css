@@ -24,6 +24,7 @@
     background: linear-gradient(to right, #d81313,#d61aad,#b135d6);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    cursor: pointer;
 }
 
 .n-right-list-ul{
@@ -41,7 +42,20 @@
     display: block;
 }
 
+.Edu-list-white>a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+}
+
 .Edu-list>a:hover, .Exp-list>a:hover, .Proj-list>a:hover, .Work-list>a:hover, .Other-list>a:hover{
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.Edu-list-white>a:hover {
     color: rgb(255, 123, 0);
     cursor: pointer;
 }
@@ -56,7 +70,6 @@
 }
 
 .sub-menu1, .sub-menu2, .sub-menu3, .sub-menu4, .sub-menu5{
-    /* background-color: black; */
     position: absolute;
 }
 
@@ -69,6 +82,13 @@
 }
 
 .Edu-list:hover .sub-menu1>ul, .Exp-list:hover .sub-menu2>ul, .Proj-list:hover .sub-menu3>ul, .Work-list:hover .sub-menu4>ul, .Other-list:hover .sub-menu5>ul{
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.Edu-list-white:hover .sub-menu1>ul {
     display: block;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -131,7 +151,6 @@
 
 .sub-menu1>ul>li>a:hover, .sub-menu2>ul>li>a:hover, .sub-menu3>ul>li>a:hover, .sub-menu4>ul>li>a:hover, .sub-menu5>ul>li>a:hover{
     color: rgb(255, 94, 0);
-    /* background: linear-gradient(to right, rgb(255, 197, 143), rgb(255, 255, 255)); */
 }
 
 .button{

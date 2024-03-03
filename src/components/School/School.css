@@ -1,0 +1,9 @@
+.school {
+    margin-top: -3.85rem;
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.2)), url(../../Images/rpchs.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: -10;
+}

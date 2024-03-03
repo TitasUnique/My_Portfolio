@@ -1,20 +1,28 @@
+import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import Cards from "./components/Cards/Cards";
-import Highlights from "./components/Highlights/Highlights";
-import Terminal from "./components/Terminal/Terminal";
-// import DemoTesting from "./components/demoTesting/DemoTesting";
-import './App.css'
+import LandingPage from "./components/LandingPage/Landing";
+import School from "./components/School/School";
+import "./App.css";
+import LocomotiveScroll from 'locomotive-scroll';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+
+
 function App() {
+const locomotiveScroll = new LocomotiveScroll();
+// const [navigatePage, setNavigatePage] = useState("");
+
   return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <Cards/>
-      <Highlights/>
-      <Terminal/>
-      {/* <DemoTesting/> */}
-    </div>
+      // <Navbar navigatePage1={navigatePage} setNavigatePage1={setNavigatePage}/>
+      // {navigatePage === "" ?<LandingPage/>:<School />}
+      <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/My_Portfolio" element={<LandingPage/>} />
+          <Route path="/school" element={<School/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

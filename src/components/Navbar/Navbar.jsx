@@ -1,21 +1,23 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
+  const [navold, setnav] = useState("");
+
   return (
     <div className="n-wrapper">
       <div className="n-left">
-        <div className="n-name">Titas</div>
+        <div className="n-name"><Link to="/My_Portfolio">Titas</Link></div>
       </div>
 
       <div className="n-right">
         <ul className='n-right-list-ul'>
-          <li className="Edu-list">
-            <a href="https://react.dev/">Education
-              <i className="fa-solid fa-arrow-right"></i>
-            </a>
+          <li className={navold === "10th 12th standard" ? "Edu-list-white" : "Edu-list"}>
+            <Link to="/school" onClick={()=> setnav("10th 12th standard")}>Education<i className="fa-solid fa-arrow-right"></i></Link>
             <div className="sub-menu1">
               <ul>
-                <li><a href="https://react.dev/">10th Standard</a></li>
+                <li><Link to="/school" onClick={()=> setnav("10th 12th standard")}>10th Standard</Link></li>
                 <li><a href="https://react.dev/">12th Standard</a></li>
                 <li><a href="https://react.dev/">Graduation</a></li>
               </ul>
