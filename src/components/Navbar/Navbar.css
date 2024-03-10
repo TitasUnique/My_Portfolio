@@ -2,6 +2,7 @@
     width: 100%;
     height: 10vh;
     display: flex;
+    /* z-index: 100; */
 }
 
 .n-left{
@@ -27,14 +28,14 @@
     cursor: pointer;
 }
 
-.n-right-list-ul{
+.n-right-main-ul {
     display: flex;
     gap: 5rem;
     margin-right: 6rem;
     list-style: none;
 }
 
-.Edu-list>a, .Exp-list>a, .Proj-list>a, .Work-list>a, .Other-list>a{
+.edulist-black>a, .explist-black>a, .projlist-black>a, .worklist-black>a, .otherlist-black>a {
     text-decoration: none;
     color: black;
     font-size: 15px;
@@ -42,7 +43,7 @@
     display: block;
 }
 
-.Edu-list-white>a {
+.edulist-white>a, .explist-white>a, .projlist-white>a, .worklist-white>a, .otherlist-white>a {
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -50,45 +51,34 @@
     display: block;
 }
 
-.Edu-list>a:hover, .Exp-list>a:hover, .Proj-list>a:hover, .Work-list>a:hover, .Other-list>a:hover{
+.edulist-black>a:hover, .explist-black>a:hover, .projlist-black>a:hover, .worklist-black>a:hover, .otherlist-black>a:hover {
     color: rgb(255, 123, 0);
     cursor: pointer;
 }
 
-.Edu-list-white>a:hover {
+.edulist-white>a:hover, .explist-white>a:hover, .projlist-white>a:hover, .worklist-white>a:hover, .otherlist-white>a:hover {
     color: rgb(255, 123, 0);
     cursor: pointer;
 }
 
-.n-right-list-ul>li:hover a>i {
+.edulist-black:hover>a>i, .edulist-white:hover>a>i, .explist-black:hover>a>i, .explist-white:hover>a>i, .projlist-black:hover>a>i, .projlist-white:hover>a>i, .worklist-black:hover>a>i, .worklist-white:hover>a>i, .otherlist-black:hover>a>i, .otherlist-white:hover>a>i {
     transform: rotate(90deg);
 }
 
-.n-right-list-ul > li > a > i {
+.edulist-black>a>i, .edulist-white>a>i, .explist-black>a>i, .explist-white>a>i, .projlist-black>a>i, .projlist-white>a>i, .worklist-black>a>i, .worklist-white>a>i, .otherlist-black>a>i, .otherlist-white>a>i{
     transition: transform 0.5s;
     margin-left: 5px;
 }
 
-.sub-menu1, .sub-menu2, .sub-menu3, .sub-menu4, .sub-menu5{
-    position: absolute;
-}
-
-.sub-menu1>ul, .sub-menu2>ul, .sub-menu3>ul, .sub-menu4>ul, .sub-menu5>ul {
+.sub-menu1-ul, .sub-menu2-ul, .sub-menu3-ul, .sub-menu4-ul, .sub-menu5-ul {
     padding-left: 0;
     padding-top: 10px;
     list-style: none;
-    position: relative;
+    position: absolute;
     display: none;
 }
 
-.Edu-list:hover .sub-menu1>ul, .Exp-list:hover .sub-menu2>ul, .Proj-list:hover .sub-menu3>ul, .Work-list:hover .sub-menu4>ul, .Other-list:hover .sub-menu5>ul{
-    display: block;
-    -webkit-animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-.Edu-list-white:hover .sub-menu1>ul {
+.edulist-black:hover .sub-menu1-ul, .edulist-white:hover .sub-menu1-ul, .explist-black:hover .sub-menu2-ul, .explist-white:hover .sub-menu2-ul, .projlist-black:hover .sub-menu3-ul, .projlist-white:hover .sub-menu3-ul, .worklist-black:hover .sub-menu4-ul, .worklist-white:hover .sub-menu4-ul, .otherlist-black:hover .sub-menu5-ul, .otherlist-white:hover .sub-menu5-ul {
     display: block;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -100,11 +90,11 @@
       to { opacity: 1; }
 }
 
-.sub-menu1>ul>li, .sub-menu2>ul>li, .sub-menu3>ul>li, .sub-menu4>ul>li, .sub-menu5>ul>li{
+.sub-menu1-ul>li, .sub-menu2-ul>li, .sub-menu3-ul>li, .sub-menu4-ul>li, .sub-menu5-ul>li {
     padding-top: 10px;
 }
 
-.sub-menu1>ul>li>a{
+.edulist-black>ul>li>a{
     position: relative;
     color: black;
     text-decoration: none;
@@ -113,7 +103,16 @@
     left: -7px;
 }
 
-.sub-menu2>ul>li>a{
+.edulist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    left: -7px;
+}
+
+.explist-black>ul>li>a{
     position: relative;
     color: black;
     text-decoration: none;
@@ -122,7 +121,16 @@
     left: -27px;
 }
 
-.sub-menu3>ul>li>a{
+.explist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    left: -27px;
+}
+
+.projlist-black>ul>li>a{
     position: relative;
     color: black;
     text-decoration: none;
@@ -131,7 +139,16 @@
     left: -30px;
 }
 
-.sub-menu4>ul>li>a{
+.projlist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    left: -30px;
+}
+
+.worklist-black>ul>li>a{
     position: relative;
     color: black;
     text-decoration: none;
@@ -140,7 +157,16 @@
     left: -21px;
 }
 
-.sub-menu5>ul>li>a{
+.worklist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    left: -21px;
+}
+
+.otherlist-black>ul>li>a{
     position: relative;
     color: black;
     text-decoration: none;
@@ -149,7 +175,16 @@
     left: 7px;
 }
 
-.sub-menu1>ul>li>a:hover, .sub-menu2>ul>li>a:hover, .sub-menu3>ul>li>a:hover, .sub-menu4>ul>li>a:hover, .sub-menu5>ul>li>a:hover{
+.otherlist-white>ul>li>a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    left: 7px;
+}
+
+.edulist-black>ul>li>a:hover, .edulist-white>ul>li>a:hover, .explist-black>ul>li>a:hover, .explist-white>ul>li>a:hover, .projlist-black>ul>li>a:hover, .projlist-white>ul>li>a:hover, .worklist-black>ul>li>a:hover, .worklist-white>ul>li>a:hover, .otherlist-black>ul>li>a:hover, .otherlist-white>ul>li>a:hover {
     color: rgb(255, 94, 0);
 }
 

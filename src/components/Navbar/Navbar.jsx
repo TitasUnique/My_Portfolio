@@ -1,9 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
-  const [navold, setnav] = useState("");
+const Navbar = ({navold}) => {
 
   return (
     <div className="n-wrapper">
@@ -12,67 +11,58 @@ const Navbar = () => {
       </div>
 
       <div className="n-right">
-        <ul className='n-right-list-ul'>
-          <li className={navold === "10th 12th standard" ? "Edu-list-white" : "Edu-list"}>
-            <Link to="/school" onClick={()=> setnav("10th 12th standard")}>Education<i className="fa-solid fa-arrow-right"></i></Link>
-            <div className="sub-menu1">
-              <ul>
-                <li><Link to="/school" onClick={()=> setnav("10th 12th standard")}>10th Standard</Link></li>
-                <li><a href="https://react.dev/">12th Standard</a></li>
+        <ul className='n-right-main-ul'>
+          <li className={navold === "10th 12th standard" ? "edulist-white": "edulist-black"}>
+            <Link to="/school">Education<i className="fa-solid fa-arrow-right i-tag"></i></Link>
+              <ul className='sub-menu1-ul'>
+                <li><Link to="/school">10th Standard</Link></li>
+                <li><Link to="/school">12th Standard</Link></li>
                 <li><a href="https://react.dev/">Graduation</a></li>
               </ul>
-            </div>
           </li>
 
-          <li className='Exp-list'>
+          <li className={navold === "10th 12th standard" ? "explist-white": "explist-black"}>
             <a href="https://react.dev/">Experiences
               <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <div className="sub-menu2">
-              <ul>
+              <ul className='sub-menu2-ul'>
                 <li><a href="https://react.dev/">LearnElectronics India</a></li>
                 <li><a href="https://react.dev/">Wipro</a></li>
               </ul>
-            </div>
           </li>
 
-          <li className='Proj-list'>
+          <li className={navold === "10th 12th standard" ? "projlist-white": "projlist-black"}>
             <a href="https://react.dev/">Projects
               <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <div className="sub-menu3">
-              <ul>
+              <ul className='sub-menu3-ul'>
                 <li><a href="https://react.dev/">Academic Projects</a></li>
                 <li><a href="https://react.dev/">Work Projects</a></li>
                 <li><a href="https://react.dev/">Personal Projects</a></li>
               </ul>
-            </div>
           </li>
 
-          <li className='Work-list'>
+          <li className={navold === "10th 12th standard" ? "worklist-white": "worklist-black"}>
             <a href="https://react.dev/">WorkDemo
               <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <div className="sub-menu4">
-              <ul>
+              <ul className='sub-menu4-ul'>
                 <li><a href="https://react.dev/">Web Developement</a></li>
                 <li><a href="https://react.dev/">Coding Analysis</a></li>
               </ul>
-            </div>
           </li>
 
-          <li className='Other-list'>
+          <li className={navold === "10th 12th standard" ? "otherlist-white": "otherlist-black"}>
             <a href="https://react.dev/">Others
               <i className="fa-solid fa-arrow-right"></i></a>
-            <div className="sub-menu5">
-              <ul>
+              <ul className='sub-menu5-ul'>
                 <li>
                   <a href="https://react.dev/">Hobby</a>
                 </li>
               </ul>
-            </div>
           </li>
         </ul>
+
         <button className='button'>Contact</button>
       </div>
     </div>

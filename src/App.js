@@ -1,25 +1,27 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import Navbar from "./components/Navbar/Navbar";
 import LandingPage from "./components/LandingPage/Landing";
 import School from "./components/School/School";
 import "./App.css";
-import LocomotiveScroll from 'locomotive-scroll';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-
+import LocomotiveScroll from "locomotive-scroll";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-const locomotiveScroll = new LocomotiveScroll();
-// const [navigatePage, setNavigatePage] = useState("");
-
+  // const locomotiveScroll = new LocomotiveScroll();
+    const [navold, setnav] = useState("landing-page");
+    useEffect(() => {
+      const locomotiveScroll = new LocomotiveScroll();
+      return () => {
+        locomotiveScroll.destroy();
+      };
+    }, []);
   return (
-      // <Navbar navigatePage1={navigatePage} setNavigatePage1={setNavigatePage}/>
-      // {navigatePage === "" ?<LandingPage/>:<School />}
-      <BrowserRouter>
+    <BrowserRouter>
       <div className="App">
-        <Navbar />
+        <Navbar navold={navold} setnav={setnav}/>
         <Routes>
-          <Route path="/My_Portfolio" element={<LandingPage/>} />
-          <Route path="/school" element={<School/>} />
+          <Route path="/My_Portfolio" element={<LandingPage navold={navold} setnav={setnav}/>} />
+          <Route path="/school" element={<School navold={navold} setnav={setnav}/>} />
         </Routes>
       </div>
     </BrowserRouter>
