@@ -1,9 +1,9 @@
 import React from "react";
 import ReactTyped from "react-typed";
 import './Home.css';
-import Image1 from '../../Images/img1.jpg';
-import Image2 from '../../Images/img2.jpg';
-import Image3 from '../../Images/img3.jpg';
+import Image1 from '../../Images/Home_Images/img1.jpg';
+import Image2 from '../../Images/Home_Images/img2.jpg';
+import Image3 from '../../Images/Home_Images/img3.jpg';
 import Resume from '../../Images/Resume_Titas Saha.pdf';
 const Home = () => {
   return (

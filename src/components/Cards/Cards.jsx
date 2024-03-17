@@ -1,14 +1,14 @@
 import React from 'react'
 import './Cards.css';
 import Mycard from './Cardshown';
-import Project from '../../Images/project.png';
-import Robot from '../../Images/robot.png';
-import Achieve from '../../Images/Achievement.png';
-import Certi from '../../Images/Certification.png';
-import Exp1 from '../../Images/Experience02.png';
-import Grad from '../../Images/Graduation.png';
-import Tech1 from '../../Images/Tech01.png';
-import Tech3 from '../../Images/Technologyint.png';
+import Project from '../../Images/Crousel_images/project.png';
+import Robot from '../../Images/Crousel_images/robot.png';
+import Achieve from '../../Images/Crousel_images/Achievement.png';
+import Certi from '../../Images/Crousel_images/Certification.png';
+import Exp1 from '../../Images/Crousel_images/Experience02.png';
+import Grad from '../../Images/Crousel_images/Graduation.png';
+import Tech1 from '../../Images/Crousel_images/Tech01.png';
+import Tech3 from '../../Images/Crousel_images/Technologyint.png';
 const Cards = () => {
   const leftbtn = () => {
     let box = document.querySelector('.cards-container');

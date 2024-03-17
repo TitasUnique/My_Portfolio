@@ -17,7 +17,7 @@ const Navbar = ({navold}) => {
               <ul className='sub-menu1-ul'>
                 <li><Link to="/school">10th Standard</Link></li>
                 <li><Link to="/school">12th Standard</Link></li>
-                <li><a href="https://react.dev/">Graduation</a></li>
+                <li><Link to="/college">Graduation</Link></li>
               </ul>
           </li>
 

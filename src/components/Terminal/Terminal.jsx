@@ -1,9 +1,9 @@
 import React from 'react'
 import './Terminal.css'
-import wave from '../../Images/wave.png'
-import instagram from '../../Images/instagram.png'
-import linkedin from '../../Images/linkedin.png'
-import github from '../../Images/github.png'
+import wave from '../../Images/Terminal_Images/wave.png'
+import instagram from '../../Images/Terminal_Images/instagram.png'
+import linkedin from '../../Images/Terminal_Images/linkedin.png'
+import github from '../../Images/Terminal_Images/github.png'
 const Terminal = () => {
   return (
     <div className='terminal-section'>

@@ -1,13 +1,13 @@
 import React from 'react'
 import './Highlights.css'
-import java from '../../Images/java.png'
-import arduino from '../../Images/arduino.png'
-import Bootstrap from '../../Images/Bootstrap.png'
-import css from '../../Images/css.png'
-import html from '../../Images/html.png'
-import javascript from '../../Images/javascript.png'
-import oops from '../../Images/oops.png'
-import react from '../../Images/react.png'
+import java from '../../Images/Highlight_images/java.png'
+import arduino from '../../Images/Highlight_images/arduino.png'
+import Bootstrap from '../../Images/Highlight_images/Bootstrap.png'
+import css from '../../Images/Highlight_images/css.png'
+import html from '../../Images/Highlight_images/html.png'
+import javascript from '../../Images/Highlight_images/javascript.png'
+import oops from '../../Images/Highlight_images/oops.png'
+import react from '../../Images/Highlight_images/react.png'
 const Highlights = () => {
 
   return (
