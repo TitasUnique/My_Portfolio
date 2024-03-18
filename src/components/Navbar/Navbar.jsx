@@ -63,7 +63,7 @@ const Navbar = ({navold}) => {
           </li>
         </ul>
 
-        <button className='button'>Contact</button>
+        <Link className='button' to="/contact" >Contact</Link>
       </div>
     </div>
   )

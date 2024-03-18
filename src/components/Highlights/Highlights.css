@@ -1,26 +1,30 @@
 .highlight {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cards-section {
   display: flex;
   align-items: center;
-  margin: 0%;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: auto;
-  height: 205px;
+  margin-top: 5%;
+  min-width: 100%;
+  min-height: auto;
   background-color: rgb(255, 255, 255);
+}
+
+.box-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   perspective: 1000px;
   position: relative;
-  display: flex;
-  margin: 0 43px;
-  align-items: center;
-  justify-content: center;
   height: 80px;
   width: 80px;
 }

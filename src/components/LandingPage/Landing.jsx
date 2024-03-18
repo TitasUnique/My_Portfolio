@@ -7,7 +7,6 @@ const Landing = ({navold,setnav}) => {
     useEffect(() => {
         if (navold === "10th 12th standard") {
           setnav("landing-page")
-          console.log("landing")
         }
       }, [navold,setnav])
     return (
