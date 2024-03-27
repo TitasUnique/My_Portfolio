@@ -4,7 +4,13 @@ import wave from '../../Images/Terminal_Images/wave.png'
 import instagram from '../../Images/Terminal_Images/instagram.png'
 import linkedin from '../../Images/Terminal_Images/linkedin.png'
 import github from '../../Images/Terminal_Images/github.png'
+
 const Terminal = () => {
+  
+const alert = () => {
+  window.alert("Successfully Submited");
+}
+
   return (
     <div className='terminal-section'>
       <div className="bg-image">
@@ -34,7 +40,7 @@ const Terminal = () => {
             <input type="text" name="user_name" className='user' placeholder='Name' />
             <input type="email" name="user_email" className='user' placeholder='Email' />
             <textarea rows="5" cols="40" name="message" className='user' placeholder='Message' />
-            <input type="text" value="Send" className='button' />
+            <button className='t-button' onClick={()=> alert()}>Send</button>
           </form>
         </div>
       </div>

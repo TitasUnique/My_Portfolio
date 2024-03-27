@@ -9,6 +9,8 @@ import Exp1 from '../../Images/Crousel_images/Experience02.png';
 import Grad from '../../Images/Crousel_images/Graduation.png';
 import Tech1 from '../../Images/Crousel_images/Tech01.png';
 import Tech3 from '../../Images/Crousel_images/Technologyint.png';
+import { Link } from 'react-router-dom'
+
 const Cards = () => {
   const leftbtn = () => {
     let box = document.querySelector('.cards-container');
@@ -28,7 +30,7 @@ const Cards = () => {
         
         <div className="cards-container">
             <Mycard name="Project" img={Robot} style01={{transform : "scale(1.1)"}} width01={{width : "40%"}} projname={"Fire Fighting Robot"} detail={"Arduino, Electronics, C Coding, Sensors, TeamLead"}/>
-            <Mycard name = "Graduation" img={Grad} style01={{transform : "scale(1.1)"}} width01={{width : "44%"}} projname={"JISCE"} detail={"Electronics and Communication Engineering Department"}/>
+            <Link to="/college"><Mycard name = "Graduation" img={Grad} style01={{transform : "scale(1.1)"}} width01={{width : "44%"}} projname={"JISCE"} detail={"Electronics and Communication Engineering Department"}></Mycard></Link>
             <Mycard name="Project" img={Project} style01={{transform : "scale(1.2)"}} width01={{width : "64%"}} projname={"Online VCD System"} detail={"HTML, CSS, SQL, Tomcat Server, Java, JDBC, TeamLead"}/>
             <Mycard name="Experience" img={Exp1} style01={{transform : "scale(1)"}} width01={{width : "46%"}} projname={"Wipro Technologies"} detail={"Project Engineer, Java Developer, Frontend Developement"}/>
             <Mycard name="Project" img={Robot} style01={{transform : "scale(1.1)"}} width01={{width : "40%"}} projname={"Water Garbage Cleaner"} detail={"Arduino, Electronics, C Coding, Sensors, Chemistry, TeamLead"}/>

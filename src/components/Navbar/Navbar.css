@@ -22,10 +22,19 @@
 .n-name{
     font-size: 40px;
     font-family: Brush Script MT;
-    background: linear-gradient(to right, #d81313,#d61aad,#b135d6);
+    /* background: linear-gradient(to right, #f51a1a,#f51a6e, #f51a9a, #f51ae3,#b135d6, #6535d6); */
+    background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-size: 300%;
+    background-position: left;
     cursor: pointer;
+    animation: text-animation 3s infinite alternate;
+}
+
+@keyframes text-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
 
 .n-right-main-ul {

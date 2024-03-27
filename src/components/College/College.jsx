@@ -10,8 +10,9 @@ import Ilovejis1 from '../../Images/College_images/ILoveJis.jpg'
 import Ilovejis2 from '../../Images/College_images/I_Love_Jis.jpg'
 import Lastday from '../../Images/College_images/LastDay.jpg'
 import jistech from '../../Images/College_images/jistech_group.jpg'
+import Navbar from "../../components/Navbar/Navbar"
 
-const College = ({ setnav, navold }) => {
+const College = () => {
 
   const [currentImageIndex, setcurrentImageIndex] = useState(0);
 
@@ -22,14 +23,9 @@ const College = ({ setnav, navold }) => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  useEffect(() => {
-    if (navold === "landing-page") {
-      setnav("10th 12th standard")
-      console.log("school")
-    }
-  }, [navold, setnav]);
-
   return (
+    <>
+    <Navbar navold={"white"}/>
     <div className='college'>
       <div className="collegeName animate__animated animate__zoomInDown">JIS COLLEGE OF ENGINEERING, KALYANI</div>
       <div className="college-descrip-box">
@@ -40,6 +36,7 @@ const College = ({ setnav, navold }) => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

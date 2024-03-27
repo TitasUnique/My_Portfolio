@@ -12,7 +12,7 @@ const Navbar = ({navold}) => {
 
       <div className="n-right">
         <ul className='n-right-main-ul'>
-          <li className={navold === "10th 12th standard" ? "edulist-white": "edulist-black"}>
+          <li className={navold === "white" ? "edulist-white": "edulist-black"}>
             <Link to="/school">Education<i className="fa-solid fa-arrow-right i-tag"></i></Link>
               <ul className='sub-menu1-ul'>
                 <li><Link to="/school">10th Standard</Link></li>
@@ -21,7 +21,7 @@ const Navbar = ({navold}) => {
               </ul>
           </li>
 
-          <li className={navold === "10th 12th standard" ? "explist-white": "explist-black"}>
+          <li className={navold === "white" ? "explist-white": "explist-black"}>
             <a href="https://react.dev/">Experiences
               <i className="fa-solid fa-arrow-right"></i>
             </a>
@@ -31,7 +31,7 @@ const Navbar = ({navold}) => {
               </ul>
           </li>
 
-          <li className={navold === "10th 12th standard" ? "projlist-white": "projlist-black"}>
+          <li className={navold === "white" ? "projlist-white": "projlist-black"}>
             <a href="https://react.dev/">Projects
               <i className="fa-solid fa-arrow-right"></i>
             </a>
@@ -42,7 +42,7 @@ const Navbar = ({navold}) => {
               </ul>
           </li>
 
-          <li className={navold === "10th 12th standard" ? "worklist-white": "worklist-black"}>
+          <li className={navold === "white" ? "worklist-white": "worklist-black"}>
             <a href="https://react.dev/">WorkDemo
               <i className="fa-solid fa-arrow-right"></i>
             </a>
@@ -52,7 +52,7 @@ const Navbar = ({navold}) => {
               </ul>
           </li>
 
-          <li className={navold === "10th 12th standard" ? "otherlist-white": "otherlist-black"}>
+          <li className={navold === "white" ? "otherlist-white": "otherlist-black"}>
             <a href="https://react.dev/">Others
               <i className="fa-solid fa-arrow-right"></i></a>
               <ul className='sub-menu5-ul'>
