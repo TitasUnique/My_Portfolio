@@ -22,12 +22,12 @@ const Navbar = ({navold}) => {
           </li>
 
           <li className={navold === "white" ? "explist-white": "explist-black"}>
-            <a href="https://react.dev/">Experiences
+            <Link to="/experience">Experiences
               <i className="fa-solid fa-arrow-right"></i>
-            </a>
+            </Link>
               <ul className='sub-menu2-ul'>
-                <li><a href="https://react.dev/">LearnElectronics India</a></li>
-                <li><a href="https://react.dev/">Wipro</a></li>
+                <li><Link to="/experience">LearnElectronics India</Link></li>
+                <li><Link to="/experience">Wipro</Link></li>
               </ul>
           </li>
 
