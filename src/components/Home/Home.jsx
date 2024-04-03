@@ -1,5 +1,5 @@
 import React from "react";
-import ReactTyped from "react-typed";
+import { ReactTyped } from "react-typed";
 import './Home.css';
 import Image1 from '../../Images/Home_Images/img1.jpg';
 import Image2 from '../../Images/Home_Images/img2.jpg';
