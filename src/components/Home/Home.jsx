@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactTyped } from "react-typed";
+// import { ReactTyped } from "react-typed";
 import './Home.css';
 import Image1 from '../../Images/Home_Images/img1.jpg';
 import Image2 from '../../Images/Home_Images/img2.jpg';
@@ -11,9 +11,9 @@ const Home = () => {
       <div className="h-left">
         <span>Hello! I Am</span>
         <span>Titas Saha</span>
-        <div className="t-writter">
+        {/* <div className="t-writter">
           <ReactTyped strings={["Frontend Developement with Entry Level of Experience in Web Development", "Core Java with Intermediate Level of Experience in Coding","UI/UX Designing with Entry Level of Experience in Web Designing"]} typeSpeed={40} backSpeed={20} backDelay={600} loop />
-        </div>
+        </div> */}
         <a className="h-button" href={Resume}>Download CV</a>
       </div>
       <div className="h-right">
