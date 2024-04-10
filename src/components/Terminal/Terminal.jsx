@@ -30,7 +30,7 @@ const alert = () => {
               <img src={instagram} alt="#" />
             </a>
           </div>
-          <div className="about-project">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel</div>
+          <div className="about-project">This Project is still under development stage. So there will be many webpages & elements that will won't work properly. Please have patience.</div>
         </div>
 
         <div className="line"></div>
