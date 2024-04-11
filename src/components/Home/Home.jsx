@@ -12,17 +12,17 @@ const Home = () => {
         <span>Hello! I Am</span>
         <span>Titas Saha</span>
         <div className="t-writter">
-        <Typewriter className='t-writter' words={["React.JS Developement with Entry Level of Experience in Web Development", "Core Java with Intermediate Level of Experience in Coding", "UI/UX Designing with Entry Level of Experience in Web Designing"]} typeSpeed={40} deleteSpeed={20} delaySpeed={800} loop={false}/>
+          <Typewriter className='t-writter' words={["React.JS Developement with Entry Level of Experience in Web Development", "Core Java with Intermediate Level of Experience in Coding", "UI/UX Designing with Entry Level of Experience in Web Designing"]} typeSpeed={40} deleteSpeed={20} delaySpeed={800} loop={false} />
         </div>
         <a className="h-button" href={Resume}>Download CV</a>
       </div>
       <div className="h-right">
-        <img src={Image1} alt="" />
-        <img src={Image2} alt="" />
-        <img src={Image3} alt="" />
         <div className="blur1"></div>
         <div className="blur2"></div>
         <div className="blur3"></div>
+        <img className='h-image1' src={Image1} alt="" />
+        <img className='h-image2' src={Image2} alt="" />
+        <img className='h-image3' src={Image3} alt="" />
       </div>
     </div>
   );
