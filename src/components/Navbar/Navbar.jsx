@@ -11,6 +11,7 @@ const Navbar = ({ navold }) => {
       <div className="mob-nav">
         <button className={`nav-mob-btn ${Mnav === true ? 'cross' : 'bars'}`} onClick={() => { SetMnav(!Mnav) }}>{Mnav === true ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}</button>
         <div className="mob-name"><Link to="/My_Portfolio">Titas</Link></div>
+        <Link to="/contact"><button className='mob-contact'><i className="fa-solid fa-address-book"></i></button></Link>
       </div>
       
       <div className={`n-wrapper ${Mnav === true ? 'mob-wrapper-show' : 'mob-wrapper-off'}`}>

@@ -3,41 +3,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: red; */
+  height: 20rem;
+  min-width: 100%;
 }
 
 .cards-section {
+  /* background-color: beige; */
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 40px;
   min-width: 100%;
-  min-height: auto;
-  background-color: rgb(255, 255, 255);
+  min-height: 100px;
 }
 
 .box-container {
+  padding: 0;
+  margin: 0;
+  height: 6vw;
+  width: 6vw;
+  /* background-color: green; */
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* background-color: violet; */
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   perspective: 1000px;
   position: relative;
-  height: 80px;
-  width: 80px;
+  height: 6vw;
+  width: 6vw;
 }
 
-.pentagon-card {
+.H-card {
   position: absolute;
-  height: 80px;
-  width: 80px;
+  height: 6vw;
+  width: 6vw;
   backface-visibility: hidden;
   transition: transform 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.pentagon-card {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   background: linear-gradient(to right, rgb(128, 136, 131), rgb(184, 195, 197));
 }
@@ -50,7 +67,8 @@
 }
 
 .text-java, .text-oops {
-  font-size: 20px;
+  font-size: 1.5vw;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -68,15 +86,7 @@
 }
 
 .circle-card {
-  position: absolute;
   background: linear-gradient(to right,  rgb(135 9 93), rgb(229 49 102));
-  height: 80px;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backface-visibility: hidden;
-  transition: transform 0.5s;
   border-radius: 50%;
 }
 
@@ -88,7 +98,8 @@
 }
 
 .text-css, .text-Bootstrap {
-  font-size: 20px;
+  font-size: 1.5vw;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   -webkit-animation: glow1 1s ease-in-out infinite alternate;
@@ -97,7 +108,7 @@
 }
 
 .text-Bootstrap {
-  font-size: 16px;
+  font-size: 1vw;
 }
 
 @keyframes glow1 {
@@ -110,16 +121,11 @@
 }
 
 .diamond-card {
-  position: absolute;
   background: linear-gradient(to right, rgb(10, 100, 145), rgb(17, 45, 60));
-  height: 66px;
-  width: 66px;
   rotate: 45deg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backface-visibility: hidden;
   transition: transform 0.5s;
+  height: 5vw;
+  width: 5vw;
 }
 
 .diamond-card-back {
@@ -130,7 +136,8 @@
 }
 
 .text-javascript, .text-html {
-  font-size: 20px;
+  font-size: 1.5vw;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   rotate: -45deg;
@@ -139,8 +146,8 @@
   animation: glow2 1s ease-in-out infinite alternate;
 }
 
-.text-javascript{
-  font-size: 16px;
+.text-javascript {
+  font-size: 1vw;
 }
 
 @keyframes glow2 {
@@ -153,14 +160,7 @@
 }
 
 .square-card {
-  position: absolute;
   background: linear-gradient(to right,  rgb(159 159 3), rgb(0 253 255 / 44%));
-  height: 70px;
-  width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backface-visibility: hidden;
   transition: transform 0.5s;
 }
 
@@ -172,16 +172,13 @@
 }
 
 .text-arduino, .text-react {
-  font-size: 18px;
+  font-size: 1.3vw;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   -webkit-animation: glow3 1s ease-in-out infinite alternate;
   -moz-animation: glow3 1s ease-in-out infinite alternate;
   animation: glow3 1s ease-in-out infinite alternate;
-}
-
-.text-arduino {
-  font-size: 15px;
 }
 
 @keyframes glow3 {

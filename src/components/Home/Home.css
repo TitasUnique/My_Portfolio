@@ -1,191 +1,191 @@
 .homeintro{
-    display: flex;
-    height: 500px;
-    max-width: 100%;
-    margin-top: 8rem;
-    /* background-color: rgba(253, 77, 77, 0.836); */
+  display: flex;
+  height: 500px;
+  max-width: 100%;
+  margin-top: 8rem;
+  /* background-color: rgba(253, 77, 77, 0.836); */
 }
 
 .h-left{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    /* border: 1px solid red; */
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
 .h-right{
-    display: flex;
-    width: 50%;
-    /* border: 1px solid black; */
+  display: flex;
+  width: 50%;
+  /* border: 1px solid black; */
 }
 
 .h-left>:nth-child(1){
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 6rem;
-    font-family: Garamond;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: Garamond;
 }
 
 .h-left>:nth-child(2){
-    font-weight: bold;
-    font-size: 5rem;
-    font-family: monospace;
-    background: linear-gradient(to right, rgb(68, 151, 228), rgb(121, 51, 202));
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-weight: bold;
+  font-size: 5rem;
+  font-family: monospace;
+  background: linear-gradient(to right, rgb(68, 151, 228), rgb(121, 51, 202));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .t-writter{
-    /* background-color: black; */
-    margin-top: 15px;
-    color: rgb(11, 39, 131);
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-    min-height: 8%;
+  /* background-color: black; */
+  margin-top: 15px;
+  color: rgb(11, 39, 131);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  min-height: 8%;
 }
 
 .h-button{
-    width: 8vw;
-    margin-top: 6rem;
-    border-radius: 30px;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: clamp(4px, 12px, 13px);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
-    box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
+  width: 8vw;
+  margin-top: 6rem;
+  border-radius: 30px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: clamp(4px, 12px, 13px);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
+  box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
 }
 
 .h-button:hover{
-    cursor: pointer;
-    background: rgb(233, 124, 22);
-    color: white;
+  cursor: pointer;
+  background: rgb(233, 124, 22);
+  color: white;
 }
 
 .blur1{
-    position: absolute;
-    width: 10rem;
-    height: 8rem;
-    background: rgb(8, 64, 247);
-    border-radius: 70%;
-    filter: blur(140px);
-    margin-left: 7vw;
+  position: absolute;
+  width: 10rem;
+  height: 8rem;
+  background: rgb(8, 64, 247);
+  border-radius: 70%;
+  filter: blur(140px);
+  margin-left: 7vw;
 }
 
 .blur2{
-    position: absolute;
-    width: 10rem;
-    height: 8rem;
-    background: rgb(255, 5, 180);
-    border-radius: 50%;
-    filter: blur(140px);
-    margin-top: 170px;
-    margin-left: 24vw;
+  position: absolute;
+  width: 10rem;
+  height: 8rem;
+  background: rgb(255, 5, 180);
+  border-radius: 50%;
+  filter: blur(140px);
+  margin-top: 170px;
+  margin-left: 24vw;
 }
 
 .blur3{
-    position: absolute;
-    width: 10rem;
-    height: 8rem;
-    background: rgb(253, 152, 0);;
-    border-radius: 50%;
-    filter: blur(140px);
-    margin-top: 340px;
-    margin-left: 7vw;
+  position: absolute;
+  width: 10rem;
+  height: 8rem;
+  background: rgb(253, 152, 0);;
+  border-radius: 50%;
+  filter: blur(140px);
+  margin-top: 340px;
+  margin-left: 7vw;
 }
 
 .h-image1{
-    position: absolute;
-    margin-left: 7vw;
-    max-height: 30vh;
-    max-width: 13vw;
-    transform: scale(1);
-    border-radius: 8px;
-    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  position: absolute;
+  margin-left: 7vw;
+  max-height: 30vh;
+  max-width: 13vw;
+  transform: scale(1);
+  border-radius: 8px;
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
 }
 
 .h-image2{
-    position: absolute;
-    margin-top: 170px;
-    margin-left: 24vw;
-    max-height: 30vh;
-    max-width: 13vw;
-    transform: scale(1);
-    border-radius: 8px;
-    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 24vw;
+  max-height: 30vh;
+  max-width: 13vw;
+  transform: scale(1);
+  border-radius: 8px;
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
 
 }
 
 .h-image3{
-    position: absolute;
-    margin-left: 7vw;
-    margin-top: 340px;
-    max-height: 30vh;
-    max-width: 13vw;
-    transform: scale(1);
-    border-radius: 8px;
-    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  position: absolute;
+  margin-left: 7vw;
+  margin-top: 340px;
+  max-height: 30vh;
+  max-width: 13vw;
+  transform: scale(1);
+  border-radius: 8px;
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
 
 }
 
 @media only screen and (max-width: 576px) {
-    .homeintro{
-        display: flex;
-        height: 650px;
-        max-width: 100%;
-        margin-top: 5rem;
-        /* background-color: rgba(253, 77, 77, 0.836); */
-    }
+  .homeintro{
+      display: flex;
+      height: 650px;
+      max-width: 100%;
+      margin-top: 5rem;
+      /* background-color: rgba(253, 77, 77, 0.836); */
+  }
 
-    .h-left {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
+  .h-left {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
 
-    .h-right {
-        display: none;
-    }
+  .h-right {
+      display: none;
+  }
 
-    .h-left>:nth-child(1){
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        font-size: 6rem;
-        font-family: Garamond;
-    }
-    
-    .h-left>:nth-child(2){
-        font-weight: bold;
-        font-size: 4rem;
-        font-family: monospace;
-        background: linear-gradient(to right, rgb(68, 151, 228), rgb(121, 51, 202));
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
+  .h-left>:nth-child(1){
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 6rem;
+      font-family: Garamond;
+  }
+  
+  .h-left>:nth-child(2){
+      font-weight: bold;
+      font-size: 4rem;
+      font-family: monospace;
+      background: linear-gradient(to right, rgb(68, 151, 228), rgb(121, 51, 202));
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  }
 
-    .t-writter{
-        color: rgb(11, 39, 131);
-        font-size: 18px;
-        font-weight: bold;
-        font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-        min-height: 7%;
-    }
+  .t-writter{
+      color: rgb(11, 39, 131);
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+      min-height: 7%;
+  }
 
-    .h-button{
-        width: 20vw;
-        margin-top: 6rem;
-        border-radius: 30px;
-        border: none;
-        color: rgb(0, 0, 0);
-        font-size: clamp(4px, 12px, 13px);
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px;
-        background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
-        box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
-    }
+  .h-button{
+      width: 20vw;
+      margin-top: 6rem;
+      border-radius: 30px;
+      border: none;
+      color: rgb(0, 0, 0);
+      font-size: clamp(4px, 12px, 13px);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
+      box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
+  }
 }
