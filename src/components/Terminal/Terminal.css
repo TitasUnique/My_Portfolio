@@ -1,6 +1,7 @@
 .terminal-section {
     display: flex;
     height: auto;
+    /* height: 149px; */
     max-width: 100%;
     margin-top: 15rem;
     /* overflow: hidden; */
@@ -55,9 +56,9 @@
 }
 
 .line {
-    margin-top: 10px;
+    margin-top: 1vw;
     border-left: 3px solid rgb(0, 0, 0);
-    height: 25vw;
+    height: 24vw;
 }
 
 .link-image {
@@ -79,12 +80,15 @@
 }
 
 .about-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 8vw;
     width: 70%;
     border-radius: 10px;
     border: 2px solid black;
     /* word-wrap: break-word; */
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .form1 {
@@ -120,4 +124,62 @@ textarea {
     cursor: pointer;
     background: rgb(233, 124, 22);
     color: white;
+}
+
+.right2 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .terminal-section {
+        margin-top: 8rem;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .span-mail {
+        font-weight: bold;
+        font-size: clamp(10px, 3vw, 20px);
+        padding: 3% 0 3% 0;
+    }
+
+    .link-image>a>img {
+        max-height: 6vw;
+        max-width: 6vw;
+    }
+
+    .right, .about-project {
+        display: none;
+    }
+
+    .right2 {
+        display: block;
+        width: 50%;
+        margin: 0 10px 0 10px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .about-project2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 8vw 0 0 0;
+        width: 100%;
+        height: 14vw;
+        font-size: 2vw;
+    }
 }

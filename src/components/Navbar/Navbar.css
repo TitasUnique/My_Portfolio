@@ -345,11 +345,20 @@
     .edulist-white > a, .edulist-white > span, .explist-white > a, .explist-white > span, .projlist-white > a, .projlist-white > span, .worklist-white > a, .worklist-white > span, .otherlist-white > a, .otherlist-white > span {
         color: black;
 }
+
+.edulist-black>span, .explist-black>span, .projlist-black>span, .worklist-black>span, .otherlist-black>span {
+    font-size: clamp(15px, 1vw, 24px);
+}
+
+.edulist-white>span, .explist-white>span, .projlist-white>span, .worklist-white>span, .otherlist-white>span {
+    font-size: clamp(15px, 1vw, 24px);
+}
   }
+
 
 
 
   /* For screens smaller than 768px (standard tablets) */
 /* @media only screen and (max-width: 768px) {
-    still under develop
+    still under develop process
   } */

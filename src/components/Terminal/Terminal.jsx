@@ -6,10 +6,10 @@ import linkedin from '../../Images/Terminal_Images/linkedin.png'
 import github from '../../Images/Terminal_Images/github.png'
 
 const Terminal = () => {
-  
-const alert = () => {
-  window.alert("Successfully Submited Your Response !");
-}
+
+  const alert = () => {
+    window.alert("Successfully Submited Your Response !");
+  }
 
   return (
     <div className='terminal-section'>
@@ -39,8 +39,11 @@ const alert = () => {
             <input type="text" name="user_name" className='user' placeholder='Name' />
             <input type="email" name="user_email" className='user' placeholder='Email' />
             <textarea rows="5" cols="40" name="message" className='user' placeholder='Message' />
-            <button className='t-button' onClick={()=> alert()}>Send</button>
+            <button className='t-button' onClick={() => alert()}>Send</button>
           </form>
+        </div>
+        <div className="right2">
+          <div className="about-project2">This Project is still under development stage. So there will be many webpages & elements that will won't work properly. Please have patience. If you want to see this project's code then go to my github account & look for 'My-Portfolio' repository.</div>
         </div>
       </div>
     </div>
