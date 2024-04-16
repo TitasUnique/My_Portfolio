@@ -1,94 +1,99 @@
 .terminal-section {
     display: flex;
-    height: 50%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
     margin-top: 15rem;
-    overflow: hidden;
-    z-index: -10;
+    /* overflow: hidden; */
+    /* background-color: black; */
+    /* z-index: -10; */
 }
 
 .bg-image {
-    position: absolute;
+    /* position: absolute; */
     margin: 0;
     padding: 0;
     display: flex;
-    height: auto;
+    height: 35vw;
     width: 100%;
-    overflow: hidden;
-    z-index: -10;
-}
-
-.bg-image>img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    z-index: -1;
+    background-image: url('../../Images/Terminal_Images/wave.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transform: scaleX(-1);
+    /* background-attachment: fixed; */
+    /* overflow: hidden; */
+    /* z-index: -10; */
+    /* background-color: pink; */
 }
 
 .content {
     position: absolute;
     display: flex;
-    width: 100%;
-    margin-top: 8%;
+    max-width: 100%;
+    margin-top: 8vw;
 }
 
 .right {
     display: flex;
-    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .left {
     display: flex;
-    flex: 1;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2vw;
+}
+
+.span-mail {
+    font-weight: bold;
+    font-size: clamp(10px, 2.3vw, 40px);
+    padding: 3% 0 3% 0;
 }
 
 .line {
     margin-top: 10px;
     border-left: 3px solid rgb(0, 0, 0);
-    height: 330px;
+    height: 25vw;
 }
 
 .link-image {
     display: flex;
-    height: 25%;
+    height: auto;
     width: auto;
+    gap: 5vw;
 }
 
 .link-image>a {
     display: flex;
-    margin: 0px 25px;
-    height: 40px;
-    width: 40px;
+    height: auto;
+    width: auto;
 }
 
 .link-image>a>img {
-    height: 40px;
-    width: 40px;
+    max-height: 4vw;
+    max-width: 3vw;
 }
 
 .about-project {
-    height: 32%;
+    height: 8vw;
     width: 70%;
     border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    /* overflow: hidden; */
-    word-wrap: break-word;
-    font-size: clamp(12px, 4vw, 16px);
+    border: 2px solid black;
+    /* word-wrap: break-word; */
+    font-size: 1vw;
 }
 
 .form1 {
-    margin-left: 30%;
-    margin-top: 5rem;
+    margin-top: 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3vw;
+    height: 20vw;
 }
 
 textarea {
@@ -96,15 +101,17 @@ textarea {
 }
 
 .t-button{
-    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 3vw;
     border-radius: 30px;
     border: 1px solid black;
     color: rgb(0, 0, 0);
-    font-size: 13px;
+    font-size: 1vw;
     text-decoration: none;
     font-weight: bold;
-    /* margin-left: 40%; */
-    padding: 10px;
     background: linear-gradient(rgb(255, 196, 0), rgb(255, 174, 0));
     box-shadow: 0px 0px 5px 0px rgba(223, 107, 12, 0.74);
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Terminal.css'
-import wave from '../../Images/Terminal_Images/wave.png'
+// import wave from '../../Images/Terminal_Images/wave.png'
 import instagram from '../../Images/Terminal_Images/instagram.png'
 import linkedin from '../../Images/Terminal_Images/linkedin.png'
 import github from '../../Images/Terminal_Images/github.png'
@@ -8,17 +8,16 @@ import github from '../../Images/Terminal_Images/github.png'
 const Terminal = () => {
   
 const alert = () => {
-  window.alert("Successfully Submited");
+  window.alert("Successfully Submited Your Response !");
 }
 
   return (
     <div className='terminal-section'>
       <div className="bg-image">
-        <img src={wave} alt="#" />
       </div>
       <div className="content">
         <div className="left">
-          <h1>saha.titas.2016@gmail.com</h1>
+          <span className="span-mail">saha.titas.2016@gmail.com</span>
           <div className="link-image">
             <a href="https://github.com/TitasUnique">
               <img src={github} alt="#" />
