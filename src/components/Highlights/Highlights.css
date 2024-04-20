@@ -197,3 +197,74 @@
 .box:hover .pentagon-card-back, .box:hover .circle-card-back, .box:hover .diamond-card-back, .box:hover .square-card-back {
   transform: rotateY(0deg);
 }
+
+.mob-img-3 {
+  height: 3vw;
+  width: 3vw;
+  rotate: -45deg;
+}
+
+.mob-img-4 {
+  height: 4vw;
+  width: 4vw;
+}
+
+@media only screen and (max-width:568px) {
+
+  .cards-section {
+    /* background-color: beige; */
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 70px;
+  }
+
+  .box-container {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .box {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .H-card {
+    height: 60px;
+    width: 60px;
+  }
+
+  .mob-img-3 {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .mob-img-4 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .text-java, .text-oops {
+    font-size: 3.5vw;
+  }
+  
+  .text-css {
+    font-size: 3.5vw;
+  }
+
+  .text-Bootstrap {
+    font-size: 3vw;
+  }
+  
+  .text-html {
+    font-size: 3.5vw;
+  }
+
+  .text-javascript {
+    font-size: 3vw;
+  }
+  
+  .text-arduino, .text-react {
+    font-size: 3.3vw;
+  }
+
+}

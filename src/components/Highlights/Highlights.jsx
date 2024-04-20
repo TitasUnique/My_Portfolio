@@ -18,7 +18,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className=" H-card pentagon-card pentagon-card-front">
-              <img src={java} style={{ width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={java} alt="#" />
             </div>
             <div className=" H-card pentagon-card pentagon-card-back">
               <span className='text-java'>JAVA</span>
@@ -29,7 +29,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card circle-card circle-card-front">
-              <img src={css} style={{ "padding-top": "1vw", width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={css} alt="#" />
             </div>
             <div className="H-card circle-card circle-card-back">
               <span className="text-css">CSS</span>
@@ -40,7 +40,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card diamond-card diamond-card-front">
-              <img src={javascript} style={{ width: "3vw", height: "3vw", rotate: "-45deg" }} alt="#" />
+              <img className="mob-img-3" src={javascript} alt="#" />
             </div>
             <div className="H-card diamond-card diamond-card-back">
               <span className="text-javascript">JavaScript</span>
@@ -51,7 +51,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card square-card square-card-front">
-              <img src={arduino} style={{ width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={arduino} alt="#" />
             </div>
             <div className="H-card square-card square-card-back">
               <span className="text-arduino">Arduino</span>
@@ -62,7 +62,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card pentagon-card pentagon-card-front">
-              <img src={oops} style={{ "padding-top": "1vw", width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={oops} alt="#" />
             </div>
             <div className="H-card pentagon-card pentagon-card-back">
               <span className="text-oops">OOPS</span>
@@ -73,7 +73,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card circle-card circle-card-front">
-              <img src={Bootstrap} style={{ width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={Bootstrap} alt="#" />
             </div>
             <div className="H-card circle-card circle-card-back">
               <span className="text-Bootstrap">Bootstrap</span>
@@ -84,7 +84,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card diamond-card diamond-card-front">
-              <img src={html} style={{ width: "3vw", height: "3vw", rotate: "-45deg" }} alt="#" />
+              <img className="mob-img-3" src={html} alt="#" />
             </div>
             <div className="H-card diamond-card diamond-card-back">
               <span className="text-html">HTML</span>
@@ -95,7 +95,7 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card square-card square-card-front">
-              <img src={react} style={{width: "4vw", height: "4vw" }} alt="#" />
+              <img className="mob-img-4" src={react} alt="#" />
             </div>
             <div className="H-card square-card square-card-back">
               <span className="text-react">ReactJs</span>
