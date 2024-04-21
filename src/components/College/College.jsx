@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './College.css'
 import 'animate.css'
 import CollegeDays1 from '../../Images/College_images/CollegeDays01.jpg'
@@ -16,26 +16,30 @@ const College = () => {
 
   const [currentImageIndex, setcurrentImageIndex] = useState(0);
 
-  const images = [Ilovejis1,CollegeDays1,CollegeDays2,Hatsoff,Ilovejis2,FirstDay,Industry,Lastday,jistech];
+  const images = [Ilovejis1, CollegeDays1, CollegeDays2, Hatsoff, Ilovejis2, FirstDay, Industry, Lastday, jistech];
 
   useEffect(() => {
-    const interval = setInterval(() => {setcurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);}, 2000);
+    const interval = setInterval(() => { setcurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length); }, 2000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
     <>
-    <Navbar navold={"white"}/>
-    <div className='college'>
-      <div className="collegeName animate__animated animate__zoomInDown">JIS COLLEGE OF ENGINEERING, KALYANI</div>
-      <div className="college-descrip-box">
+      <div className='college'>
+        <div className="college-back-img"></div>
+        <Navbar navold={"white"} />
+        <div className="content-college">
+          <div className="collegeName animate__animated animate__zoomInDown">JIS COLLEGE OF ENGINEERING, KALYANI</div>
+          <div className="college-down">
+            <div className="college-descrip-box">Hello hi!</div>
+            <div className="college-img-scroll">
+              {images.map((image, index) => (
+                <img key={index} src={image} alt="" className={index === currentImageIndex ? 'active' : ''} />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="college-img-scroll">
-        {images.map((image, index) => (
-          <img key={index} src={image} alt="" className={index === currentImageIndex ? 'active' : ''} />
-        ))}
-      </div>
-    </div>
     </>
   )
 }

@@ -1,33 +1,59 @@
 .school {
-    margin-top: -3.85rem;
-    position: relative;
-    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(../../Images/School_images/rpchs.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: transparent;
+    width: 100%;
     height: 100vh;
-    z-index: -100;
 }
 
-.name {
-  width: 100%;
+.back-image {
   position: absolute;
-  margin-top: 13%;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(../../Images/School_images/rpchs.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+.content-school {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  height: auto;
+  align-items: center;
+  gap: 5vw;
+}
+
+.name-up {
   display: flex;
   color: white;
-  font-size: 30px;
+  font-size: 2vw;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
 }
 
+.down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 10vw;
+}
+
 .descrip-box {
-    position: absolute;
-    height: 50%;
-    width: 40%;
+    height: 15vw;
+    width: 30vw;
     border: 5px solid white;
+    color: white;
     border-radius: 10px;
-    margin-left: 10%;
-    margin-top: 18%;
+}
+
+.img-scroll {
+  transform: scale(1);
+  width: 25vw;
+  height: 15vw;
 }
 
 .img-scroll>img {
@@ -44,16 +70,6 @@
 .img-scroll img.active {
     opacity: 1;
 }
-
-.img-scroll {
-    position: absolute;
-    transform: scale(0.5);
-    margin-left: 45%;
-    margin-top: 11.4%;
-    width: 60%;
-    height: 500px;
-    overflow: hidden;
-  }
   
   .img-scroll:before,
   .img-scroll:after {
@@ -76,4 +92,44 @@
   
   .img-scroll:after {
     right: 0;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .content-school {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    height: auto;
+    align-items: center;
+    gap: 15vw;
+    }
+
+    .name-up {
+      font-size: 5vw;
+      font-weight: bold;
+    }
+
+    .down {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      gap: 10vw;
+      /* border: 1px solid white; */
+    }
+
+    .descrip-box {
+      height: 70vw;
+      width: 80vw;
+      border: 5px solid white;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .img-scroll {
+      transform: scale(1);
+      width: 70vw;
+      height: 50vw;
+    }
   }
