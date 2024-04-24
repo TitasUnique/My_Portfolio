@@ -15,6 +15,7 @@
     scroll-behavior: smooth;
     margin-left: 60px;
     margin-right: 60px;
+    gap: 50px;
 }
 
 .left-btn, .right-btn{

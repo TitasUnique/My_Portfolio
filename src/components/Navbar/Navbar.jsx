@@ -20,6 +20,7 @@ const Navbar = ({ navold }) => {
         </div>
 
         <div className="n-right">
+          <div className="nav-blur"></div>
           <ul className='n-right-main-ul'>
             <li className={`mob-ul ${navold === "white" ? "edulist-white" : "edulist-black"}`}>
               <span>Education<i className="fa-solid fa-arrow-right"></i></span>
