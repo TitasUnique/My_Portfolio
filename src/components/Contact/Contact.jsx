@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import Navbar from "../../components/Navbar/Navbar"
 import "./Contact.css"
 import myImage from "../../Images/contact_images/my-image.jpg"
@@ -6,9 +7,34 @@ import 'animate.css'
 
 const Contact = () => {
 
-  const alert = () => {
-    window.alert("Successfully Submited Your Response !");
+  const form = useRef();
+
+  const alert = (event) => {
+    event.preventDefault();
+    const name = event.target.user_name.value.trim();
+    const email = event.target.user_email.value.trim();
+    const message = event.target.message.value.trim();
+
+    if (name && email && message) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        window.alert("Please enter a valid email address.");
+        return;
+      }
+      emailjs.sendForm('service_cmyea8l', 'template_tju5l4a', form.current, {publicKey: '0LOTXzk6fob88s2Bs',})
+      .then(
+        () => {
+          window.alert("Successfully submitted your response!");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    } else {
+      window.alert("Please provide all required information and then submit.");
+    }
   }
+
   return (
     <>
       <Navbar navold={"black"} />
@@ -25,11 +51,11 @@ const Contact = () => {
 
       <div className="m-form">
         <h1>FEEDBACK</h1>
-        <form className="m-form1">
+        <form ref={form} className="m-form1" onSubmit={(event) => alert(event)}>
           <input type="text" name="user_name" className='m-user' placeholder='Name' />
           <input type="email" name="user_email" className='m-user' placeholder='Email' />
           <textarea rows="5" cols="40" name="message" className='m-user' placeholder='Message' />
-          <button className='m-sub-button' onClick={() => alert()}>Send</button>
+          <button type='submit' className='m-sub-button'>Send</button>
         </form>
       </div>
 
