@@ -1,0 +1,127 @@
+.main-time-div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /* background-color: black; */
+}
+
+.bg-anime {
+    position: absolute;
+    z-index: -10;
+}
+
+.timeline {
+    margin: 0;
+    height: auto;
+    padding: 10vw 0 10vw 0;
+    width: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    z-index: -10;
+}
+
+.exp-card1 {
+    height: 14vw;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 0;
+    animation: movecard 1s linear forwards;
+    animation-delay: 0.2s;
+}
+
+.exp-card2 {
+    height: 14vw;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    margin: 10vw 0 0 50%;
+    animation: movecard 1s linear forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes movecard {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.exp-textbox {
+    height: 14vw;
+    width: 35vw;
+    /* background-color: chartreuse; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.exp-card1 > img , .exp-card2 > img{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* background-color: rgba(250, 250, 250, 0.623); */
+    background-color: white;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.Wipro-img {
+    margin-left: 50vw;
+}
+
+.LE-img {
+    margin-left: -49vw;
+    transform: scale(1);
+}
+
+.exp-textbox>h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.exp-textbox>small {
+    font-size: 1vw;
+    margin: 0;
+}
+
+.exp-textbox>span {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10vw;
+    background-color: black;
+    width: 0.5vw;
+    height: 65%;
+    z-index: -10;
+    animation: moveline 2s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 65%;
+    }
+}

@@ -31,7 +31,7 @@ const College = () => {
         <div className="content-college">
           <div className="collegeName animate__animated animate__zoomInDown">JIS COLLEGE OF ENGINEERING, KALYANI</div>
           <div className="college-down">
-            <div className="college-descrip-box">Hello hi!</div>
+            <div className="college-descrip-box">At JIS College of Engineering, my college journey has been a defining chapter. Immersed in the dynamic field of ECE, I've been shaped by inspiring mentors and collaborative peers. Grateful for invaluable learnings and enduring friendships, I step forward confidently, equipped for future challenges and opportunities.</div>
             <div className="college-img-scroll">
               {images.map((image, index) => (
                 <img key={index} src={image} alt="" className={index === currentImageIndex ? 'active' : ''} />

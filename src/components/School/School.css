@@ -6,7 +6,7 @@
 
 .back-image {
   position: absolute;
-  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(../../Images/School_images/rpchs.jpg);
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(../../Images/School_images/rpchs.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -48,6 +48,20 @@
     border: 5px solid white;
     color: white;
     border-radius: 10px;
+    animation: XYZ 2.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+@keyframes XYZ {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .img-scroll {
@@ -125,6 +139,7 @@
       border: 5px solid white;
       color: white;
       border-radius: 10px;
+      font-size: 4vw;
     }
 
     .img-scroll {
