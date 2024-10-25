@@ -34,24 +34,24 @@ const Navbar = ({ navold }) => {
             <li className={`mob-ul ${navold === "white" ? "explist-white" : "explist-black"}`}>
               <span>Experiences<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu2-ul'>
-                <li><Link to="/experience">LearnElectronics India</Link></li>
                 <li><Link to="/experience">Wipro</Link></li>
+                <li><Link to="/experience">LearnElectronics India</Link></li>
               </ul>
             </li>
 
             <li className={`mob-ul ${navold === "white" ? "projlist-white" : "projlist-black"}`}>
               <span>Projects<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu3-ul'>
-                <li><a href="https://react.dev/">Academic Projects</a></li>
-                <li><a href="https://react.dev/">Work Projects</a></li>
-                <li><a href="https://react.dev/">Personal Projects</a></li>
+                <li><Link to="/academic">Academic Projects</Link></li>
+                <li><Link to="/workproj">Work Projects</Link></li>
+                <li><Link to="/personalproj">Personal Projects</Link></li>
               </ul>
             </li>
 
             <li className={`mob-ul ${navold === "white" ? "worklist-white" : "worklist-black"}`}>
               <span>WorkDemo<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu4-ul'>
-                <li><a href="https://react.dev/">Web Developement</a></li>
+                <li><Link to="/workdemo">Technology Topics</Link></li>
                 <li><a href="https://react.dev/">Coding Analysis</a></li>
               </ul>
             </li>
@@ -59,14 +59,12 @@ const Navbar = ({ navold }) => {
             <li className={`mob-ul ${navold === "white" ? "otherlist-white" : "otherlist-black"}`}>
               <span>Others<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu5-ul'>
-                <li>
-                  <a href="https://react.dev/">Hobby</a>
-                </li>
+                  <li><Link to="/hobby">Hobby</Link></li>
               </ul>
             </li>
           </ul>
 
-          <Link className='button' to="/contact" >Contact</Link>
+          <Link className='nav-button' to="/contact" >Contact</Link>
         </div>
       </div>
     </>

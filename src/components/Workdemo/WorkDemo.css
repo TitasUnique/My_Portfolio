@@ -1,0 +1,107 @@
+/* Main container for card section */
+.card-section {
+    top: 4vw;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* background: linear-gradient(white,#f0f0f0); */
+    overflow: hidden;
+    z-index: -10;
+}
+
+.academic {
+    position: absolute;
+    font-size: 80px;
+    top: 5%;
+}
+
+/* Image container for automatic image carousel */
+.image-container {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 35px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0);
+    transform: scale(1.1);
+    /* Slightly enlarge image */
+    border-radius: 35px;
+}
+
+.image-container.blurred img {
+    filter: blur(15px);
+    /* Apply blur on scroll */
+}
+
+/* Overlay text with transparent effect inside the image div */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center alignment trick */
+    font-size: 330px;
+    /* Bigger size than image container */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    border: none;
+    text-shadow: 0 0 0;
+    -webkit-font-smoothing: antialiased;
+    z-index: 2;
+    /* Ensure text is in front */
+    mix-blend-mode: difference;
+    /* Creates the transparency effect over the image */
+    pointer-events: none;
+    /* Allow clicks through the text */
+}
+
+.scroll-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: #000000b3;
+    z-index: 5;
+    /* Make sure it's on top of everything */
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.scroll-section.hidden {
+    opacity: 0;
+    /* Initially hidden */
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 80px;
+    }
+
+    .image-container {
+        width: 80%;
+        height: 50%;
+    }
+}

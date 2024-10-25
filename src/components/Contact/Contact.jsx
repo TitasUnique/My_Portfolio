@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
         <div className="why-text">
           <div className="text1"><span>WHY ME?</span></div>
-          <div className="text2 animate__animated animate__fadeInRight">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel</div>
+          <div className="text2 animate__animated animate__fadeInRight">As a React.js developer with 2 years of experience, I bring a strong foundation in web development, creating seamless, responsive, and user-friendly applications. My focus is on delivering high-quality, efficient solutions. I stay up to date with the latest industry trends, ensuring your project is built with modern, scalable technologies.</div>
         </div>
       </div>
 
