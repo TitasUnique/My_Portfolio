@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './Academic.css';
 import 'animate.css'
 import Project from "../../components/Projects/Projects"
 import Button from "../NextBtn/NextBtn"
+import PrDetails from "../../ProjDetails/ProjDetails";
 
 const Images = [
   "https://images.pexels.com/photos/3862367/pexels-photo-3862367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -29,20 +30,25 @@ const Academic = () => {
   const [HtextIndex, setHtextIndex] = useState(0);
   const [PtextIndex, setPtextIndex] = useState(0);
   const [textOpacity, setTextOpacity] = useState(1);
+  const [ProjData, setProjData] = useState([]);
 
   const handelRotation = () => {
     setTextOpacity(0);
-    
+
     setrotation(prevRotation => prevRotation + 90);
-    setTimeout(()=> {
+    setTimeout(() => {
       setHtextIndex(prevHindex => (prevHindex + 1) % Htexts.length);
       setPtextIndex(prevPindex => (prevPindex + 1) % Ptexts.length);
-    },400);
-    
+    }, 400);
+
     setTimeout(() => {
       setTextOpacity(1);
     }, 400);
   }
+
+  useEffect(() => {
+    setProjData(PrDetails.project.map(projects => projects));
+  }, []);
 
   return (
     <>
@@ -52,7 +58,7 @@ const Academic = () => {
           <h2 className="rotating-head-text" style={{ opacity: textOpacity }}>{Htexts[HtextIndex]}</h2>
           <p className="rotating-para-text" style={{ opacity: textOpacity }}>{Ptexts[PtextIndex]}</p>
         </div>
-      <Button className="next_btn" handelRotation = {()=>handelRotation()}>Next</Button>
+        <Button className="next_btn" handelRotation={() => handelRotation()}>Next</Button>
         <div className="proj-carousel">
           <div className="circle" style={{ transform: `rotate(${rotation}deg)` }}>
             <div className=" imge img1" style={{ transform: `rotate(${rotation}deg)` }}>
@@ -69,6 +75,25 @@ const Academic = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="proj-card-bellow">
+        {ProjData.map((projects, index) => (
+          <div className="proj-box">
+            <div className="proj-card">
+              <img className="proj-card-image" src={projects.cardImage} alt="#" />
+              <div className="proj-card-name">{projects.name}</div>
+            </div>
+            <div className="proj-card-links">
+              <a href={projects.paperLink} target="_blank" rel="noopener noreferrer">
+                <div className="proj-publish"><i className="fa-solid fa-book-open" style={{color: "#000000"}}></i></div>
+              </a>
+              <div className="proj-prototype-images"><i class="fa-solid fa-image" style={{color: "#000000"}}></i></div>
+              <a href={projects.PdfLink} target="_blank" rel="noopener noreferrer">
+                <div className="proj-pdf"><i class="fa-solid fa-file-pdf" style={{color: "#000000"}}></i></div>
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
