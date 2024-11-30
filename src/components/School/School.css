@@ -43,7 +43,7 @@
 }
 
 .descrip-box {
-    height: 15vw;
+    height: 10vw;
     width: 30vw;
     border: 5px solid white;
     color: white;
@@ -53,6 +53,10 @@
     justify-content: center;
     align-items: center;
     font-size: 1.1vw;
+    word-spacing: 8px;
+    text-align: justify;
+    hyphens: auto;
+    padding: 0 2vw 0 2vw;
 }
 
 @keyframes XYZ {

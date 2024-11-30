@@ -1,78 +1,63 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './WorkDemo.css';
-import 'animate.css'
-import Navbar from "../../components/Navbar/Navbar"
-
-const images = [
-  "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-];
-
+import 'animate.css';
+import Navbar from "../../components/Navbar/Navbar";
+import DwnldBtn from "../DownloadBtn/DownloadBtn";
+import Copyright  from "../CopyRight/CopyRight";
+import Json from "../../LearningPdfs/JSON.pdf";
 const Workdemo = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isBlurActive, setIsBlurActive] = useState(false);
-
-  useEffect(() => {
-    // Image carousel effect
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const overlayText = document.querySelector('.overlay-text');
-    const scrollSection = document.querySelector('.scroll-section');
-    const minFontSize = 290;
-    const maxFontSize = 330;
-
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      let newFontSize = maxFontSize - scrollPosition / 2;
-
-      // Adjust font size within the range
-      newFontSize = Math.min(maxFontSize, newFontSize);
-      newFontSize = Math.max(minFontSize, newFontSize);
-
-      // Apply dynamic font size
-      if (overlayText) {
-        overlayText.style.fontSize = `${newFontSize}px`;
-      }
-
-      // Toggle blur effect and show scroll section based on scroll position
-      if (scrollPosition > 8) {
-        setIsBlurActive(true);
-        scrollSection.classList.remove('hidden');
-      } else {
-        setIsBlurActive(false);
-        scrollSection.classList.add('hidden');
-      }
-    };
-
-    // Attach scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <>
       <Navbar navold={"black"} />
-      <div className="card-section">
-      <div className="academic animate__animated animate__slideInUp">ACADEMIC</div>
-        <div className={`image-container ${isBlurActive ? 'blurred' : ''}`}>
-          <img src={images[currentImageIndex]} alt="project showcase" />
+      <div className="work-content">
+      <h1 className="upcoming-title">LEARN WITH ME</h1>
+        <div className="work-title-span json-title">
+          <span>J</span>
+          <span>S</span>
+          <span>O</span>
+          <span>N</span>
         </div>
-        <div className="overlay-text">Projects</div>
+        <DwnldBtn PdfLink={Json} FileName={"Learn_JSON_With_Titas"} BtnName={"JSON"}/>
+        <br />
+        <br />
+        <h1 className="upcoming-title">UPCOMING</h1>
+        <div className="work-title-span js-title">
+          <span>J</span>
+          <span>A</span>
+          <span>V</span>
+          <span>A</span>
+          <span>S</span>
+          <span>C</span>
+          <span>R</span>
+          <span>I</span>
+          <span>P</span>
+          <span>T</span>
+        </div>
+        <DwnldBtn  FileName={"Learn_JS_With_Titas"} BtnName={"JavaScript"}/>
+        <br />
+        <div className="work-title-span react-title">
+          <span>R</span>
+          <span>E</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+          <span>.</span>
+          <span>J</span>
+          <span>S</span>
+        </div>
+        <DwnldBtn  FileName={"Learn_React_With_Titas"} BtnName={"React"}/>
+        <br />
+        <div className="work-title-span redux-title">
+          <span>R</span>
+          <span>E</span>
+          <span>D</span>
+          <span>U</span>
+          <span>X</span>
+        </div>
+        <DwnldBtn  FileName={"Learn_Redux_With_Titas"} BtnName={"Redux"}/>
       </div>
-      <div id="scrollSection" className="scroll-section hidden">
-        <p>This is the new element that appears on scroll.</p>
-      </div>
+      <Copyright/>
     </>
   );
 }

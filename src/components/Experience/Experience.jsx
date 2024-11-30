@@ -32,7 +32,7 @@ const Experience = ({ navold }) => {
             <img className='Wipro-img' src={Wipro} alt="" />
             <div className="exp-textbox">
               <h2>Wipro Limited</h2>
-              <small>May 2022 - Present</small>
+              <small>May 2022 - Nov 2024</small>
               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente alias laudantium perspiciatis quos sunt adipisci, aperiam quam libero soluta nostrum cum sit consequatur numquam sed ea consectetur accusamus mollitia architecto.</span>
             </div>
           </div>

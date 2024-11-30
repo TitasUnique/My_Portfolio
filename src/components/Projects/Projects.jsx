@@ -4,7 +4,6 @@ import Navbar from "../../components/Navbar/Navbar"
 
 const Projects = ({ text, images }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    // const [isBlurActive, setIsBlurActive] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -16,7 +15,6 @@ const Projects = ({ text, images }) => {
 
     useEffect(() => {
         const overlayText = document.querySelector('.overlay-text');
-        // const scrollSection = document.querySelector('.scroll-section');
         const minFontSize = 290;
         const maxFontSize = 330;
 
@@ -28,13 +26,6 @@ const Projects = ({ text, images }) => {
             if (overlayText) {
                 overlayText.style.fontSize = `${newFontSize}px`;
             }
-            // if (scrollPosition > 8) {
-            //     setIsBlurActive(true);
-            //     scrollSection.classList.remove('hidden');
-            // } else {
-            //     setIsBlurActive(false);
-            //     scrollSection.classList.add('hidden');
-            // }
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -48,14 +39,10 @@ const Projects = ({ text, images }) => {
             <div className="card-section">
                 <div className="head-text animate__animated animate__slideInUp">{text}</div>
                 <div className="image-container">
-                    {/* <div className={`image-container ${isBlurActive ? 'blurred' : ''}`}> */}
                     <img src={images[currentImageIndex]} alt="project showcase" />
                 </div>
                 <div className="overlay-text">Projects</div>
             </div>
-            {/* <div id="scrollSection" className="scroll-section hidden">
-                <p>This is the new element that appears on scroll.</p>
-            </div> */}
         </>
     );
 }

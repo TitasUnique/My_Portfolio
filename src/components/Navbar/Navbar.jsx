@@ -49,10 +49,10 @@ const Navbar = ({ navold }) => {
             </li>
 
             <li className={`mob-ul ${navold === "white" ? "worklist-white" : "worklist-black"}`}>
-              <span>WorkDemo<i className="fa-solid fa-arrow-right"></i></span>
+              <span>Resources<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu4-ul'>
                 <li><Link to="/workdemo">Technology Topics</Link></li>
-                <li><a href="https://react.dev/">Coding Analysis</a></li>
+                <li><a href="https://react.dev/">Electronics</a></li>
               </ul>
             </li>
 

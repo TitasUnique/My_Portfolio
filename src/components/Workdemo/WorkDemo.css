@@ -1,107 +1,73 @@
-/* Main container for card section */
-.card-section {
-    top: 4vw;
-    position: relative;
+.work-content {
     width: 100%;
-    height: 100vh;
+    margin: 8vw 0 4vw 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    /* background: linear-gradient(white,#f0f0f0); */
+    gap: 2vw;
     overflow: hidden;
-    z-index: -10;
+    padding-bottom: 10px;
 }
 
-.academic {
-    position: absolute;
-    font-size: 80px;
-    top: 5%;
-}
-
-/* Image container for automatic image carousel */
-.image-container {
-    position: relative;
-    width: 60%;
-    height: 60%;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 35px;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(0);
-    transform: scale(1.1);
-    /* Slightly enlarge image */
-    border-radius: 35px;
-}
-
-.image-container.blurred img {
-    filter: blur(15px);
-    /* Apply blur on scroll */
-}
-
-/* Overlay text with transparent effect inside the image div */
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    /* Center vertically */
-    left: 50%;
-    /* Center horizontally */
-    transform: translate(-50%, -50%);
-    /* Center alignment trick */
-    font-size: 330px;
-    /* Bigger size than image container */
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    border: none;
-    text-shadow: 0 0 0;
-    -webkit-font-smoothing: antialiased;
-    z-index: 2;
-    /* Ensure text is in front */
-    mix-blend-mode: difference;
-    /* Creates the transparency effect over the image */
-    pointer-events: none;
-    /* Allow clicks through the text */
-}
-
-.scroll-section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+.json-title,
+.js-title,
+.react-title,
+.redux-title {
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(5px);
-    background: #000000b3;
-    z-index: 5;
-    /* Make sure it's on top of everything */
-    transition: opacity 0.5s ease;
-    opacity: 1;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-.scroll-section.hidden {
-    opacity: 0;
-    /* Initially hidden */
-    pointer-events: none;
+.work-title-span>span {
+    font-size: clamp(2rem, 10vw, 15vw);
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0.5vw;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .overlay-text {
-        font-size: 80px;
-    }
+.work-title-span>span:hover {
+    transform: translateZ(10px) scale(1.1);
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.5),
+        2px 2px 4px rgba(0, 0, 0, 0.4),
+        3px 3px 6px rgba(0, 0, 0, 0.3);
+}
 
-    .image-container {
-        width: 80%;
-        height: 50%;
-    }
+.json-title>span:hover {
+    color: #c1c4ee;
+}
+
+.js-title>span:hover {
+    color: #b0e7f8;
+}
+
+.react-title>span:hover {
+    color: #eec1c1;
+}
+
+.redux-title>span:hover {
+    color: #9da2f1;
+}
+
+.json-title {
+    background-image: url(https://images.pexels.com/photos/15211448/pexels-photo-15211448/free-photo-of-a-hay-field-under-the-milky-way-galaxy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.js-title {
+    background-image: url(https://images.pexels.com/photos/3030268/pexels-photo-3030268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.react-title {
+    background-image: url(https://images.pexels.com/photos/866398/pexels-photo-866398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.redux-title {
+    background-image: url(https://images.pexels.com/photos/1133500/pexels-photo-1133500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
