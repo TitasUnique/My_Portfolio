@@ -14,7 +14,7 @@ const Home = () => {
         <div className="t-writter">
           <Typewriter className='t-writter' words={["React.JS Developement with Entry Level of Experience in Web Development", "Core Java with Intermediate Level of Experience in Coding", "UI/UX Designing with Entry Level of Experience in Web Designing"]} typeSpeed={40} deleteSpeed={20} delaySpeed={800} loop={false} />
         </div>
-        <a className="h-button" href={Resume} target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a className="h-button" href={Resume} target="_blank" rel="noopener noreferrer">View CV</a>
       </div>
       <div className="h-right">
         <div className="blur1"></div>

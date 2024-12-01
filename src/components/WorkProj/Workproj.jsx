@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Workproj.css';
 import 'animate.css'
-import Navbar from "../../components/Navbar/Navbar"
+import Navbar from "../../components/Navbar/Navbar";
 
 const images = [
   "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

@@ -1,0 +1,104 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.carousel-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-button:first-child {
+    left: 30px;
+}
+
+.carousel-button:last-child {
+    right: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: transform 1.1s ease;
+}
+
+.card.scaling {
+    transform: scale(0.7);
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 1.1s ease;
+}
+
+.card.scaling img {
+    transform: scale(0.7);
+}
+
+.card h3 {
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+    font-size: 6rem;
+    transition: font-size 1.1s ease, opacity 1.1s ease;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.card.scaling h3 {
+    font-size: 6rem;
+    opacity: 0;
+}
+
+.card:not(.scaling) h3 {
+    animation: fillColor 1.1s forwards;
+    transition: opacity 1.1s ease;
+}
+
+@keyframes fillColor {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: #ffffff;
+        text-shadow: none;
+
+    }
+}

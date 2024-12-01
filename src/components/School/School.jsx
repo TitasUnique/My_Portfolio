@@ -25,7 +25,7 @@ const School = () => {
         <div className="content-school">
           <div className="name-up animate__animated animate__zoomInDown">PAL CHOWDHURY HIGH SCHOOL</div>
           <div className="down">
-            <div className="descrip-box">At Pal Choudhury High School, transformative experiences shaped my character. Guided by dedicated educators, I forged lasting friendships and acquired invaluable skills, preparing me confidently for future endeavors</div>
+            <div className="descrip-box">At Pal Choudhury High School, transformative experiences shaped my character. Guided by dedicated educators, I forged lasting friendships and acquired invaluable skills, preparing me confidently for future endeavors.</div>
             <div className="img-scroll">
               {images.map((image, index) => (
                 <img key={index} src={image} alt="" className={index === currentImageIndex ? 'active' : ''} />
