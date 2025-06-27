@@ -56,7 +56,13 @@
 
 .pentagon-card {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  background: linear-gradient(to right, rgb(128, 136, 131), rgb(184, 195, 197));
+    background: linear-gradient(135deg,
+    #616161 0%,
+    #7d7d7d 30%,
+    #b3b3b3 50%,
+    #7d7d7d 70%,
+    #616161 100%
+  );
 }
 
 .pentagon-card-back {
@@ -76,6 +82,10 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.text-oops {
+  font-size: 1.2vw;
+}
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e61b00, 0 0 40px #e61b00, 0 0 50px #e61b00, 0 0 60px #e61b00, 0 0 70px #e61b00;
@@ -86,7 +96,15 @@
 }
 
 .circle-card {
-  background: linear-gradient(to right,  rgb(135 9 93), rgb(229 49 102));
+background: linear-gradient(
+  135deg,
+  #2821b4,
+  #4121b4,
+  #341e64,   /* muted pink-red */
+  #b42174,   /* light coral */
+  #b42121
+);
+
   border-radius: 50%;
 }
 
@@ -121,7 +139,14 @@
 }
 
 .diamond-card {
-  background: linear-gradient(to right, rgb(10, 100, 145), rgb(17, 45, 60));
+  background: linear-gradient(
+    135deg,
+    #3e1e1e,
+    #5d2424,
+    #7b2727,
+    #b92e2e,
+    #e62e2e
+  );
   rotate: 45deg;
   transition: transform 0.5s;
   height: 5vw;
@@ -160,7 +185,11 @@
 }
 
 .square-card {
-  background: linear-gradient(to right,  rgb(159 159 3), rgb(0 253 255 / 44%));
+  background: linear-gradient(
+    135deg,
+    #00ff86,
+    #001aff
+  );
   transition: transform 0.5s;
 }
 

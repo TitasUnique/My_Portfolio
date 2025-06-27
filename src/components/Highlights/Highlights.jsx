@@ -1,12 +1,12 @@
 import React from 'react'
 import './Highlights.css'
-import java from '../../Images/Highlight_images/java.png'
-import arduino from '../../Images/Highlight_images/arduino.png'
-import Bootstrap from '../../Images/Highlight_images/Bootstrap.png'
+import Json from '../../Images/Highlight_images/Json.png'
+import Jira from '../../Images/Highlight_images/Jira.png'
+import git from '../../Images/Highlight_images/git.png'
 import css from '../../Images/Highlight_images/css.png'
 import html from '../../Images/Highlight_images/html.png'
 import javascript from '../../Images/Highlight_images/javascript.png'
-import oops from '../../Images/Highlight_images/oops.png'
+import NextJS from '../../Images/Highlight_images/NextJS.png'
 import react from '../../Images/Highlight_images/react.png'
 const Highlights = () => {
 
@@ -18,10 +18,10 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className=" H-card pentagon-card pentagon-card-front">
-              <img className="mob-img-4" src={java} alt="#" />
+              <img className="mob-img-4" src={Json} alt="#" />
             </div>
             <div className=" H-card pentagon-card pentagon-card-back">
-              <span className='text-java'>JAVA</span>
+              <span className='text-java'>JSON</span>
             </div>
           </div>
         </div>
@@ -51,10 +51,10 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card square-card square-card-front">
-              <img className="mob-img-4" src={arduino} alt="#" />
+              <img className="mob-img-4" src={git} alt="#" />
             </div>
             <div className="H-card square-card square-card-back">
-              <span className="text-arduino">Arduino</span>
+              <span className="text-arduino">Git</span>
             </div>
           </div>
         </div>
@@ -62,10 +62,10 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card pentagon-card pentagon-card-front">
-              <img className="mob-img-4" src={oops} alt="#" />
+              <img className="mob-img-4" src={NextJS} alt="#" />
             </div>
             <div className="H-card pentagon-card pentagon-card-back">
-              <span className="text-oops">OOPS</span>
+              <span className="text-oops">Next.JS</span>
             </div>
           </div>
         </div>
@@ -73,10 +73,10 @@ const Highlights = () => {
         <div className="box-container">
           <div className="box">
             <div className="H-card circle-card circle-card-front">
-              <img className="mob-img-4" src={Bootstrap} alt="#" />
+              <img className="mob-img-4" src={Jira} alt="#" />
             </div>
             <div className="H-card circle-card circle-card-back">
-              <span className="text-Bootstrap">Bootstrap</span>
+              <span className="text-Bootstrap" style={{ fontSize: "1.5rem" }}>Jira</span>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Highlights = () => {
               <img className="mob-img-4" src={react} alt="#" />
             </div>
             <div className="H-card square-card square-card-back">
-              <span className="text-react">ReactJs</span>
+              <span className="text-react">React.JS</span>
             </div>
           </div>
         </div>

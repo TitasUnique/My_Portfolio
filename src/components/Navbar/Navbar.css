@@ -174,7 +174,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: clamp(11px, 1vw, 24px);
-    left: 0.5vw;
+    right: 0.5vw;
 }
 
 .otherlist-white>ul>li>a{
@@ -183,7 +183,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: clamp(11px, 1vw, 24px);
-    left: 0.5vw;
+    right: 0.5vw;
 }
 
 .edulist-black>ul>li>a:hover, .edulist-white>ul>li>a:hover, .explist-black>ul>li>a:hover, .explist-white>ul>li>a:hover, .projlist-black>ul>li>a:hover, .projlist-white>ul>li>a:hover, .worklist-black>ul>li>a:hover, .worklist-white>ul>li>a:hover, .otherlist-black>ul>li>a:hover, .otherlist-white>ul>li>a:hover {

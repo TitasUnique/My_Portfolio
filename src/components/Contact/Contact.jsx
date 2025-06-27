@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
         <div className="why-text">
           <div className="text1"><span>WHY ME?</span></div>
-          <div className="text2 animate__animated animate__fadeInRight">As a React.js developer with 2.7 years of experience, I bring a strong foundation in web development, creating seamless, responsive, and user-friendly applications. My focus is on delivering high-quality, efficient solutions. I stay up to date with the latest industry trends, ensuring your project is built with modern, scalable technologies.</div>
+          <div className="text2 animate__animated animate__fadeInRight">As a React.js developer with 3.1 years of experience, I bring a strong foundation in web development, creating seamless, responsive, and user-friendly applications. My focus is on delivering high-quality, efficient solutions. I stay up to date with the latest industry trends, ensuring your project is built with modern, scalable technologies.</div>
         </div>
       </div>
 
@@ -69,17 +69,17 @@ const Contact = () => {
         <div className="details-me">
 
           <div className="st-address">
-            <i class="fa-solid fa-location-dot" />
-            <span>PC STREET, BOSEPARA, RANAGHAT, NADIA, WEST BENGAL</span>
+            <i className="fa-solid fa-location-dot" />
+            <span>RANAGHAT, NADIA, WEST BENGAL</span>
           </div>
 
           <div className="ph-no">
-            <i class="fa-solid fa-phone" />
+            <i className="fa-solid fa-phone" />
             <span>7364833228</span>
           </div>
 
           <div className="mail-id">
-            <i class="fa-solid fa-envelope" />
+            <i className="fa-solid fa-envelope" />
             <span>saha.titas.2016@gmail.com</span>
           </div>
 

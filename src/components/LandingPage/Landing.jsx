@@ -9,8 +9,8 @@ const Landing = () => {
     <>
       <Navbar navold={"black"}/>
       <Home />
-      <Cards />
       <Highlights />
+      <Cards />
       <Terminal />
     </>
   )

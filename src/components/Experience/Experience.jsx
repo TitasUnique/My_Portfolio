@@ -1,16 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useLocation } from "react-router-dom";
 import Navbar from '../Navbar/Navbar'
 import './Experience.css'
 import LearnElectronics from '../../Images/Experience_images/learnElectroics.png';
 import Wipro from '../../Images/Experience_images/wipro.png';
 import "../BgAnime/BgAnime.css"
-const Experience = ({ navold }) => {
+
+const Experience = () => {
+  
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state && location.state.scrollToSection === "wipro_tech") {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <>
       <div className="main-time-div">
 
         <div className="bg-anime">
-          <ul class="background">
+          <ul className="background">
             <li></li>
             <li></li>
             <li></li>

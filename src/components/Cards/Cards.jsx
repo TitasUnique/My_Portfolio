@@ -25,21 +25,21 @@ const Cards = () => {
 
   return (
     <div className='Cardsection'>
-        <button className="left-btn" onClick={leftbtn}><h1>&gt;</h1></button>
-        <button className="right-btn" onClick={rightbtn}><h1>&lt;</h1></button>
-        
-        <div className="cards-container">
-            <Mycard name="Project" img={Robot} style01={{transform : "scale(1.1)"}} width01={{width : "40%"}} projname={"Fire Fighting Robot"} detail={"Arduino, Electronics, C Coding, Sensors, TeamLead"}/>
-            <Link to="/college"><Mycard name = "Graduation" img={Grad} style01={{transform : "scale(1.1)"}} width01={{width : "44%"}} projname={"JISCE"} detail={"Electronics and Communication Engineering Department"}></Mycard></Link>
-            <Mycard name="Project" img={Project} style01={{transform : "scale(1.2)"}} width01={{width : "64%"}} projname={"Online VCD System"} detail={"HTML, CSS, SQL, Tomcat Server, Java, JDBC, TeamLead"}/>
-            <Mycard name="Experience" img={Exp1} style01={{transform : "scale(1)"}} width01={{width : "46%"}} projname={"Wipro Technologies"} detail={"Project Engineer, Java Developer, Frontend Developement"}/>
-            <Mycard name="Project" img={Robot} style01={{transform : "scale(1.1)"}} width01={{width : "40%"}} projname={"Water Garbage Cleaner"} detail={"Arduino, Electronics, C Coding, Sensors, Chemistry, TeamLead"}/>
-            <Mycard name="Technology" img={Tech1} style01={{transform : "scale(1.1)"}} width01={{width : "45%"}} projname={"Hands-on Experiences"} detail={"Java, ReactJS, Arduino, VS Code, Proteus, Eclipse IDE, Git"}/>
-            <Mycard name="Project" img={Project} style01={{transform : "scale(1.2)"}} width01={{width : "64%"}} projname={"Smart Road"} detail={"Arduino, Electronics, Sensors, TeamLead"}/>
-            <Mycard name="Experience" img={Tech3} style01={{transform : "scale(1.1)"}} width01={{width : "62%"}} projname={"LearnElectronics India"} detail={"Internship, Quiz Making, Data Upload, Product Review"}/>
-            <Mycard name="Achievement" img={Achieve} style01={{transform : "scale(1.1)"}} width01={{width : "44%"}} projname={"Short Film"} detail={"Organised by JIS College HU Dept., 1st Runners up"}/>
-            <Mycard name="Certification" img={Certi} style01={{transform : "scale(1.1)"}} width01={{width : "30%"}} projname={"Learning Stages"} detail={"Nagarro, JIS College, IIT Kharagpur, Coursera, Wipro"}/>
-        </div>
+      <button className="left-btn" onClick={leftbtn}><h1>&gt;</h1></button>
+      <button className="right-btn" onClick={rightbtn}><h1>&lt;</h1></button>
+
+      <div className="cards-container">
+        <Link to="/academic" state={{scrollToSection: "academic_projects" }}><Mycard name="Project" img={Robot} style01={{ transform: "scale(1.1)" }} width01={{ width: "40%" }} projname={"Fire Fighting Robot"} detail={"Arduino, Electronics, C Coding, Sensors, TeamLead"} /></Link>
+        <Link to="/college"><Mycard name="Graduation" img={Grad} style01={{ transform: "scale(1.1)" }} width01={{ width: "44%" }} projname={"JISCE"} detail={"Electronics and Communication Engineering Department"} /></Link>
+        <Link to="/personalproj"><Mycard name="Project" img={Project} style01={{ transform: "scale(1.2)" }} width01={{ width: "64%" }} projname={"Movie Ticket Booking"} detail={"ReactJS, React-Redux, Hooks, React-Router, JavaScript, Git"} /></Link>
+        <Link to="/experience" state={{scrollToSection: "wipro_tech" }}><Mycard name="Experience" img={Exp1} style01={{ transform: "scale(1)" }} width01={{ width: "46%" }} projname={"Wipro Technologies"} detail={"Project Engineer, React Developer, Automation Testing, JAVA Intern"} /></Link>
+        <Link to="/academic" state={{scrollToSection: "academic_projects" }}><Mycard name="Project" img={Robot} style01={{ transform: "scale(1.1)" }} width01={{ width: "40%" }} projname={"Water Garbage Cleaner"} detail={"Arduino, Electronics, C Coding, Sensors, Chemistry, TeamLead"} /></Link>
+        <Link to="/workproj"><Mycard name="Technology" img={Tech1} style01={{ transform: "scale(1.1)" }} width01={{ width: "45%" }} projname={"Hands-on Experiences"} detail={"ReactJS, Redux, Hooks, JSON, Router, JS, DevOps, JIRA, Git"} /></Link>
+        <Link to="/personalproj"><Mycard name="Project" img={Project} style01={{ transform: "scale(1.2)" }} width01={{ width: "64%" }} projname={"My Portfolio"} detail={"Arduino, Electronics, Sensors, TeamLead"} /></Link>
+        <Link to="/experience"><Mycard name="Experience" img={Tech3} style01={{ transform: "scale(1.1)" }} width01={{ width: "62%" }} projname={"LearnElectronics India"} detail={"Internship, Quiz Making, Data Upload, Product Review"} /></Link>
+        <Mycard name="Achievement" img={Achieve} style01={{ transform: "scale(1.1)" }} width01={{ width: "44%" }} projname={"Short Film"} detail={"Organised by JIS College HU Dept., 1st Runners up"} />
+        <Mycard name="Certification" img={Certi} style01={{ transform: "scale(1.1)" }} width01={{ width: "30%" }} projname={"Learning Stages"} detail={"Nagarro, JIS College, IIT Kharagpur, Coursera, Wipro, Udemy"} />
+      </div>
     </div>
   )
 }

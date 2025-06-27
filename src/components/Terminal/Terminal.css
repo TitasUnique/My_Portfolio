@@ -89,6 +89,10 @@
     border: 2px solid black;
     /* word-wrap: break-word; */
     font-size: 1.2vw;
+    word-spacing: 8px;
+    text-align: justify;
+    hyphens: auto;
+    padding: 1vw;
 }
 
 .form1 {

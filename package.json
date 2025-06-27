@@ -7,11 +7,6 @@
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@mui/material": "^6.1.8",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@tsparticles/all": "^3.3.0",
-    "@tsparticles/react": "^3.0.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "locomotive-scroll": "^5.0.0-beta.11",
@@ -20,7 +15,6 @@
     "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
-    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

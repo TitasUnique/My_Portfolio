@@ -43,13 +43,13 @@ return (
       <div className="left">
         <span className="span-mail">saha.titas.2016@gmail.com</span>
         <div className="link-image">
-          <a href="https://github.com/TitasUnique">
+          <a href="https://github.com/TitasUnique" target='_blank' rel='noopener noreferrer'>
             <img src={github} alt="#" />
           </a>
-          <a href="https://www.linkedin.com/in/titas-saha-64713b20a/">
+          <a href="https://www.linkedin.com/in/titas-saha-64713b20a/" target='_blank' rel='noopener noreferrer'>
             <img src={linkedin} alt="#" />
           </a>
-          <a href="https://www.instagram.com/saha_titu_09/">
+          <a href="https://www.instagram.com/saha_titu_09/" target='_blank' rel='noopener noreferrer'>
             <img src={instagram} alt="#" />
           </a>
         </div>

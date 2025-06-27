@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import './Academic.css';
 import 'animate.css'
 import Project from "../../components/Projects/Projects"
@@ -50,6 +51,20 @@ const Academic = () => {
     setProjData(PrDetails.project.map(projects => projects));
   }, []);
 
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state && location.state.scrollToSection === "academic_projects") {
+      setTimeout(() => {
+        window.scrollBy({
+          top: 800,
+          left: 0,
+          right: 0,
+          behavior: "smooth",
+        });
+      }, 300);
+    }
+  }, [location]);
+
   return (
     <>
       <Project text={"ACADEMIC"} images={Images} />
@@ -76,20 +91,20 @@ const Academic = () => {
           </div>
         </div>
       </div>
-      <div className="proj-card-bellow">
+      <div className="proj-card-bellow" id="special-section">
         {ProjData.map((projects, index) => (
-          <div className="proj-box">
+          <div key={index} className="proj-box">
             <div className="proj-card">
               <img className="proj-card-image" src={projects.cardImage} alt="#" />
               <div className="proj-card-name">{projects.name}</div>
             </div>
             <div className="proj-card-links">
               <a href={projects.paperLink} target="_blank" rel="noopener noreferrer">
-                <div className="proj-publish"><i className="fa-solid fa-book-open" style={{color: "#000000"}}></i></div>
+                <div className="proj-publish"><i className="fa-solid fa-book-open" style={{ color: "#000000" }}></i></div>
               </a>
-              <div className="proj-prototype-images"><i class="fa-solid fa-image" style={{color: "#000000"}}></i></div>
+              <div className="proj-prototype-images"><i className="fa-solid fa-image" style={{ color: "#000000" }}></i></div>
               <a href={projects.PdfLink} target="_blank" rel="noopener noreferrer">
-                <div className="proj-pdf"><i class="fa-solid fa-file-pdf" style={{color: "#000000"}}></i></div>
+                <div className="proj-pdf"><i className="fa-solid fa-file-pdf" style={{ color: "#000000" }}></i></div>
               </a>
             </div>
           </div>

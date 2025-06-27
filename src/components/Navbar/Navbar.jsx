@@ -34,6 +34,7 @@ const Navbar = ({ navold }) => {
             <li className={`mob-ul ${navold === "white" ? "explist-white" : "explist-black"}`}>
               <span>Experiences<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu2-ul'>
+                <li><Link to="/experience">Tech India</Link></li>
                 <li><Link to="/experience">Wipro</Link></li>
                 <li><Link to="/experience">LearnElectronics India</Link></li>
               </ul>
@@ -59,6 +60,7 @@ const Navbar = ({ navold }) => {
             <li className={`mob-ul ${navold === "white" ? "otherlist-white" : "otherlist-black"}`}>
               <span>Others<i className="fa-solid fa-arrow-right"></i></span>
               <ul className='sub-menu5-ul'>
+                  <li><Link to="/hobby">Certificates</Link></li>
                   <li><Link to="/hobby">Hobby</Link></li>
               </ul>
             </li>
